@@ -1,0 +1,3421 @@
+{
+  "job_id": "76397_1787259695",
+  "set_num": "76397",
+  "status": "in_progress",
+  "workflow_stage": "parts_entry",
+  "updated_at": "2026-08-20 17:06:42",
+  "user_input": [
+    {
+      "part_num": "11090",
+      "color_id": 10,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "11203",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "11203",
+      "color_id": 226,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "11610",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "13965",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "14716",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "14716",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 6
+    },
+    {
+      "part_num": "15068",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 5
+    },
+    {
+      "part_num": "15573",
+      "color_id": 1,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "15573",
+      "color_id": 297,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "15712",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "15712",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "15712",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "18674",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "18674",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "18787",
+      "color_id": 322,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "18792",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "19729pr0002",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "19729pr0012",
+      "color_id": 25,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "20310",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "20482",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "20482",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "20482",
+      "color_id": 47,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "20482",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "20482",
+      "color_id": 288,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "22388",
+      "color_id": 41,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "23187",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2343",
+      "color_id": 297,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "24093",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2420",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "2420",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "24246",
+      "color_id": 2,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "2431",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "2431",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "2431",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2431",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2431",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2431",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "24324",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2454b",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2454pb213",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "24866",
+      "color_id": 30,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "24866",
+      "color_id": 31,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2654",
+      "color_id": 47,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "27925",
+      "color_id": 14,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "27925",
+      "color_id": 191,
+      "bricklink_color_id": null,
+      "quantity_have": 6
+    },
+    {
+      "part_num": "29111",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3001",
+      "color_id": 2,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3001",
+      "color_id": 73,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3003",
+      "color_id": 73,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3004",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30044",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30046",
+      "color_id": 297,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3005",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3005",
+      "color_id": 25,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3005",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 5
+    },
+    {
+      "part_num": "3005",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3008",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3010",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30136",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 12
+    },
+    {
+      "part_num": "30136",
+      "color_id": 84,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "30136",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "30153",
+      "color_id": 34,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3020",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3020",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3022",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3023",
+      "color_id": 2,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3023",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3023",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 6
+    },
+    {
+      "part_num": "3023",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "3024",
+      "color_id": 2,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3024",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3024",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "3024",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "3032",
+      "color_id": 1,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3032",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3062b",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 10
+    },
+    {
+      "part_num": "3062b",
+      "color_id": 36,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3062b",
+      "color_id": 47,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3068b",
+      "color_id": 191,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3068pb1993",
+      "color_id": 191,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3069bpr0359",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "32028",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "32828",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "33909",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3460",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3460",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 6
+    },
+    {
+      "part_num": "35480",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "35480",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "35480",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "3626cpr2265",
+      "color_id": 78,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3626cpr3220",
+      "color_id": 78,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3626cpr3647",
+      "color_id": 78,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3659",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3660",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3666",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3666",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "3666",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "36752a",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "36752a",
+      "color_id": 308,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3710",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3710",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "3710",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "37364c03",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3795",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3795",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "38648pat0001",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "38798",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "40240",
+      "color_id": 308,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "40240",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4032a",
+      "color_id": 25,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "4032a",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "4070",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "4162",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "41740",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "41740",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "4282",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4282",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "44728",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "44728",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "4727",
+      "color_id": 10,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "4733",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4738c",
+      "color_id": 179,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4738c",
+      "color_id": 1103,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "47905",
+      "color_id": 378,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "48336",
+      "color_id": 2,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4865b",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4865b",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "54200",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "54200",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "58176",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "58842",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "59900",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "59900",
+      "color_id": 52,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "60581",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6141",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6141",
+      "color_id": 25,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "6141",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6141",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6141",
+      "color_id": 84,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6141",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "6266",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "6266",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "62810",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "62810",
+      "color_id": 308,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "63965",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "64644",
+      "color_id": 308,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "64647",
+      "color_id": 182,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "65509",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "65509",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "66252",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "69934",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "69934pb016",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "69934pr0006",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "73825",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "73983",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "73983",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "73983",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "75538",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "78132",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "80835",
+      "color_id": 1103,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "85861",
+      "color_id": 182,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "85984",
+      "color_id": 14,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "85984",
+      "color_id": 191,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "87079",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "87079",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "87544",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "87544pb084",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "87544pb086",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "87580",
+      "color_id": 10,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "87580",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 6
+    },
+    {
+      "part_num": "87580",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 6
+    },
+    {
+      "part_num": "90398pr0058",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "91704",
+      "color_id": 9999,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "92593",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "92950",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "93061",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "93160",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "93273",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "93273",
+      "color_id": 14,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "93273",
+      "color_id": 191,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "93273",
+      "color_id": 308,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "970c19",
+      "color_id": 84,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "970d07pr0001",
+      "color_id": 84,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "973c03h02pr5682",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "973c03h02pr5745",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "973c23h02pr5916",
+      "color_id": 84,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "973c25h02pr3096",
+      "color_id": 378,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "98138",
+      "color_id": 14,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "98138",
+      "color_id": 84,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "98283",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "99207",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "99207",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "99207",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "99563",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "99781",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "99781",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    }
+  ],
+  "substitutions": [
+    {
+      "csv_part_num": "3062a",
+      "csv_color_id": 19,
+      "set_part_num": "3062b",
+      "set_color_id": 19,
+      "quantity_have": 1,
+      "quantity_allocated": 1,
+      "rel_type": "A"
+    },
+    {
+      "csv_part_num": "92593",
+      "csv_color_id": 28,
+      "set_part_num": "41740",
+      "set_color_id": 28,
+      "quantity_have": 1,
+      "quantity_allocated": 1,
+      "rel_type": "A"
+    }
+  ],
+  "declined_substitutions": [],
+  "variation_proposals": [
+    {
+      "csv_part_num": "3062a",
+      "csv_color_id": 19,
+      "quantity_have": 1,
+      "set_part_num": "3062b",
+      "set_part_name": "Brick Round 1 x 1 Open Stud",
+      "set_color_id": 19,
+      "set_color_name": "Tan",
+      "quantity_required": 10,
+      "rel_type": "A",
+      "csv_image_url": "https://cdn.rebrickable.com/media/parts/ldraw/0/3062a.png",
+      "csv_image_color_matched": false,
+      "set_image_url": "https://cdn.rebrickable.com/media/parts/elements/4117070.jpg",
+      "set_image_color_matched": true
+    },
+    {
+      "csv_part_num": "92593",
+      "csv_color_id": 28,
+      "quantity_have": 1,
+      "set_part_num": "41740",
+      "set_part_name": "Plate Special 1 x 4 with 2 Studs with Groove [New Underside]",
+      "set_color_id": 28,
+      "set_color_name": "Dark Tan",
+      "quantity_required": 3,
+      "rel_type": "A",
+      "csv_image_url": "https://cdn.rebrickable.com/media/parts/elements/6146462.jpg",
+      "csv_image_color_matched": true,
+      "set_image_url": "https://cdn.rebrickable.com/media/parts/elements/6257599.jpg",
+      "set_image_color_matched": true
+    }
+  ],
+  "import_have": [
+    {
+      "part_num": "11090",
+      "color_id": 10,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "11203",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "11203",
+      "color_id": 226,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "11610",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "13965",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "14716",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "14716",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 6
+    },
+    {
+      "part_num": "15068",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 5
+    },
+    {
+      "part_num": "15573",
+      "color_id": 1,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "15573",
+      "color_id": 297,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "15712",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "15712",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "15712",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "18674",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "18674",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "18787",
+      "color_id": 322,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "18792",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "19729pr0002",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "19729pr0012",
+      "color_id": 25,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "20310",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "20482",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "20482",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "20482",
+      "color_id": 47,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "20482",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "20482",
+      "color_id": 288,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "22388",
+      "color_id": 41,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "23187",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2343",
+      "color_id": 297,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "24093",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "2420",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2420",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "24246",
+      "color_id": 2,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "2431",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "2431",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "2431",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "2431",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2431",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "2431",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "24324",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2454b",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "2454pb213",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "24866",
+      "color_id": 30,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "24866",
+      "color_id": 31,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2654",
+      "color_id": 47,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "27925",
+      "color_id": 14,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "27925",
+      "color_id": 191,
+      "bricklink_color_id": null,
+      "quantity_have": 6
+    },
+    {
+      "part_num": "29111",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3001",
+      "color_id": 2,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3001",
+      "color_id": 73,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3003",
+      "color_id": 73,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3004",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30044",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30046",
+      "color_id": 297,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3005",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3005",
+      "color_id": 25,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3005",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 5
+    },
+    {
+      "part_num": "3005",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3008",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3010",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30136",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 5
+    },
+    {
+      "part_num": "30136",
+      "color_id": 84,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "30136",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "30153",
+      "color_id": 34,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3020",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3020",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "3022",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3023",
+      "color_id": 2,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3023",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3023",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "3023",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "3024",
+      "color_id": 2,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3024",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3024",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3024",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "3032",
+      "color_id": 1,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3032",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3062a",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3062b",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 9
+    },
+    {
+      "part_num": "3062b",
+      "color_id": 36,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3062b",
+      "color_id": 47,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3068b",
+      "color_id": 191,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "3068pb1993",
+      "color_id": 191,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3069bpr0359",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "32028",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "32828",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "33909",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3460",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3460",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "35480",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "35480",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "35480",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "3626cpr2265",
+      "color_id": 78,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3626cpr3220",
+      "color_id": 78,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3626cpr3647",
+      "color_id": 78,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3659",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3660",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3666",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3666",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "3666",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "36752a",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "36752a",
+      "color_id": 308,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "3710",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3710",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3710",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "37364c03",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3795",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3795",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "38648pat0001",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "38798",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "40240",
+      "color_id": 308,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "40240",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4032a",
+      "color_id": 25,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "4032a",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "4070",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "4162",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "41740",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "41740",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "4282",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4282",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "44728",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "44728",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "4727",
+      "color_id": 10,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "4733",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4738c",
+      "color_id": 179,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4738c",
+      "color_id": 1103,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "47905",
+      "color_id": 378,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "48336",
+      "color_id": 2,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4865b",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4865b",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "54200",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "54200",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "58176",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "58842",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "59900",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "59900",
+      "color_id": 52,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "60581",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "6141",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6141",
+      "color_id": 25,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "6141",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "6141",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6141",
+      "color_id": 84,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6141",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "6266",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "6266",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "62810",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "62810",
+      "color_id": 308,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "63965",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "64644",
+      "color_id": 308,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "64647",
+      "color_id": 182,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "65509",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "65509",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "66252",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "69934",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "69934pb016",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "69934pr0006",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "73825",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "73983",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "73983",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "73983",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "75538",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "78132",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "80835",
+      "color_id": 1103,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "85861",
+      "color_id": 182,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "85984",
+      "color_id": 14,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "85984",
+      "color_id": 191,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "87079",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "87079",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "87544",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "87544pb084",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "87544pb086",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "87580",
+      "color_id": 10,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "87580",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 6
+    },
+    {
+      "part_num": "87580",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "90398pr0058",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "91704",
+      "color_id": 9999,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "92593",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "92593",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "92950",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "93061",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "93160",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "93273",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "93273",
+      "color_id": 14,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "93273",
+      "color_id": 191,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "93273",
+      "color_id": 308,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "970c19",
+      "color_id": 84,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "970d07pr0001",
+      "color_id": 84,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "973c03h02pr5682",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "973c03h02pr5745",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "973c23h02pr5916",
+      "color_id": 84,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "973c25h02pr3096",
+      "color_id": 378,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "98138",
+      "color_id": 14,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "98138",
+      "color_id": 84,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "98283",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "99207",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "99207",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "99207",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "99563",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "99781",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "99781",
+      "color_id": 28,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    }
+  ],
+  "extra_part_metadata": [],
+  "wanted_list_remarks": [],
+  "removal_states": [],
+  "import_history": [
+    {
+      "source_name": "brickognize_results_20260820_170110.csv",
+      "content_hash": "58efb0e22ece18b30769d642ae609f685b6ddce28c9e342a4e282100576aac5d",
+      "imported_at": "2026-08-20 17:02:19",
+      "mode": "fill_blanks",
+      "contributions": [
+        {
+          "part_num": "11090",
+          "color_id": 10,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "11203",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "11203",
+          "color_id": 226,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "11610",
+          "color_id": 484,
+          "bricklink_color_id": null,
+          "quantity": 4
+        },
+        {
+          "part_num": "13965",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 4
+        },
+        {
+          "part_num": "14716",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 4
+        },
+        {
+          "part_num": "14716",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 6
+        },
+        {
+          "part_num": "15068",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 5
+        },
+        {
+          "part_num": "15573",
+          "color_id": 1,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "15573",
+          "color_id": 297,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "15712",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "15712",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "18674",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "18787",
+          "color_id": 322,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "18792",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "19729pr0002",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "19729pr0012",
+          "color_id": 25,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "20310",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "20482",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "20482",
+          "color_id": 28,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "20482",
+          "color_id": 47,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "20482",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "20482",
+          "color_id": 288,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "22388",
+          "color_id": 41,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "23187",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "2420",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "2420",
+          "color_id": 484,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "24246",
+          "color_id": 2,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "2431",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "2431",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "2431",
+          "color_id": 484,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "24324",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "2454pb213",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "24866",
+          "color_id": 30,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "24866",
+          "color_id": 31,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "2654",
+          "color_id": 47,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "27925",
+          "color_id": 14,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "27925",
+          "color_id": 191,
+          "bricklink_color_id": null,
+          "quantity": 6
+        },
+        {
+          "part_num": "29111",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3001",
+          "color_id": 2,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3001",
+          "color_id": 73,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3003",
+          "color_id": 73,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3004",
+          "color_id": 28,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "30044",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "30046",
+          "color_id": 297,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3005",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3005",
+          "color_id": 25,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3005",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 5
+        },
+        {
+          "part_num": "3005",
+          "color_id": 484,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3008",
+          "color_id": 28,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3010",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "30136",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 5
+        },
+        {
+          "part_num": "30136",
+          "color_id": 84,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "30136",
+          "color_id": 484,
+          "bricklink_color_id": null,
+          "quantity": 4
+        },
+        {
+          "part_num": "30153",
+          "color_id": 34,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3020",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3022",
+          "color_id": 28,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3023",
+          "color_id": 2,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3023",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3023",
+          "color_id": 28,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "3023",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "3024",
+          "color_id": 2,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3024",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3024",
+          "color_id": 28,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3024",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 4
+        },
+        {
+          "part_num": "3032",
+          "color_id": 1,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3032",
+          "color_id": 28,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3062a",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3062b",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 9
+        },
+        {
+          "part_num": "3062b",
+          "color_id": 36,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3062b",
+          "color_id": 47,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3068pb1993",
+          "color_id": 191,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3069bpr0359",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "32028",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "32828",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "33909",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3460",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3460",
+          "color_id": 28,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "35480",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "35480",
+          "color_id": 484,
+          "bricklink_color_id": null,
+          "quantity": 4
+        },
+        {
+          "part_num": "3626cpr2265",
+          "color_id": 78,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3626cpr3220",
+          "color_id": 78,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3626cpr3647",
+          "color_id": 78,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3659",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3660",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3666",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3666",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "3710",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3710",
+          "color_id": 28,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3710",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 4
+        },
+        {
+          "part_num": "37364c03",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3795",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3795",
+          "color_id": 484,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "38648pat0001",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "38798",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "40240",
+          "color_id": 308,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "40240",
+          "color_id": 484,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "4032a",
+          "color_id": 25,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "4070",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "4162",
+          "color_id": 28,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "41740",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "4282",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "44728",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "4727",
+          "color_id": 10,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "4733",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "4738c",
+          "color_id": 179,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "47905",
+          "color_id": 378,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "48336",
+          "color_id": 2,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "4865b",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "54200",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "54200",
+          "color_id": 28,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "58176",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "58842",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "59900",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "59900",
+          "color_id": 52,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "6141",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "6141",
+          "color_id": 25,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "6141",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "6141",
+          "color_id": 84,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "6266",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "6266",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "63965",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "64644",
+          "color_id": 308,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "64647",
+          "color_id": 182,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "65509",
+          "color_id": 484,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "66252",
+          "color_id": 72,
+          "bricklink_color_id": null,
+          "quantity": 4
+        },
+        {
+          "part_num": "69934pb016",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "73825",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 4
+        },
+        {
+          "part_num": "73983",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "73983",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "75538",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "78132",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "85861",
+          "color_id": 182,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "85984",
+          "color_id": 14,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "87079",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "87544pb084",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "87544pb086",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "87580",
+          "color_id": 10,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "87580",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 6
+        },
+        {
+          "part_num": "92593",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "92593",
+          "color_id": 28,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "92950",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "93061",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "93160",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "93273",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "93273",
+          "color_id": 14,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "93273",
+          "color_id": 191,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "93273",
+          "color_id": 308,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "970c19",
+          "color_id": 84,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "970d07pr0001",
+          "color_id": 84,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "973c03h02pr5682",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "973c03h02pr5745",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "973c25h02pr3096",
+          "color_id": 378,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "98138",
+          "color_id": 14,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "98138",
+          "color_id": 84,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "98283",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "99207",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "99207",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 4
+        },
+        {
+          "part_num": "99207",
+          "color_id": 72,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "99563",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "99781",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "report_snapshot": [],
+  "wanted_list_snapshot": []
+}

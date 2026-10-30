@@ -1,0 +1,5134 @@
+{
+  "job_id": "75939_1787591046",
+  "set_num": "75939",
+  "status": "complete",
+  "workflow_stage": "complete",
+  "updated_at": "2026-08-24 13:26:05",
+  "user_input": [
+    {
+      "part_num": "11212",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "11215",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "11458",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "13770",
+      "color_id": 118,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "13770",
+      "color_id": 297,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "14716",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "15068",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "15397",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "15445",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "15573",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "15712",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "18855",
+      "color_id": 323,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "18990",
+      "color_id": 29,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "18990",
+      "color_id": 41,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "23186",
+      "color_id": 84,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "23969",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "23969",
+      "color_id": 41,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "2412b",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "2412b",
+      "color_id": 179,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "2420",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "24201",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2431",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2431",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "2456",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "24946",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "25269",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "2540",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "26047",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "28192",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "298c02",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3003",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3003",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 5
+    },
+    {
+      "part_num": "3004",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3004",
+      "color_id": 326,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3005",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3005pr0024",
+      "color_id": 118,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3005pr0024",
+      "color_id": 182,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3009",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30162",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3020",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3022",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3022",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "3023",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3023",
+      "color_id": 326,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30236",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30237b",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "3024",
+      "color_id": 2,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3024",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 6
+    },
+    {
+      "part_num": "3024",
+      "color_id": 288,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3029",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3034",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30357",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30377",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3040b",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "30414",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30414",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "32000",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "32013",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "32056",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "32123b",
+      "color_id": 14,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3245c",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "32607",
+      "color_id": 2,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "32607",
+      "color_id": 10,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "32803",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3297",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3297pb053",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3623",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 5
+    },
+    {
+      "part_num": "3626cpr2579",
+      "color_id": 78,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3626cpr3226",
+      "color_id": 92,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3626cpr3577",
+      "color_id": 92,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3660",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3660",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 6
+    },
+    {
+      "part_num": "36840",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3749",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3795",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3830",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3831",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3832",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3899",
+      "color_id": 14,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3937",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3937c02",
+      "color_id": 1,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3937c02",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4066",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4081b",
+      "color_id": 7,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4081b",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "41948",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4274",
+      "color_id": 1,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "4286",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "43093",
+      "color_id": 1,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "44809",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "49153",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "53020",
+      "color_id": 27,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "59349",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "59349",
+      "color_id": 41,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "60208",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "61332",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "6134",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "6141",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6141",
+      "color_id": 34,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6141",
+      "color_id": 36,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6141",
+      "color_id": 118,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6180",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6180pb150",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "62698",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "64453",
+      "color_id": 41,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "64453pb012",
+      "color_id": 118,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6636",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "67443pr0002",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "67443pr0002",
+      "color_id": 378,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "68068",
+      "color_id": 9999,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "68081pr0002",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "68081pr0002",
+      "color_id": 326,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "87079",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "87079",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "87079pb1118",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "87079pb1119",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "87580",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "88646",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "88646pb014",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "92280",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "92280",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "93273",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "970c05pr1518",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "970c12",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "970c19",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "973c14h13pr4311",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "973c26h02pr5239",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "98138",
+      "color_id": 47,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "98560",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "99930",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    }
+  ],
+  "substitutions": [
+    {
+      "csv_part_num": "87989",
+      "csv_color_id": 27,
+      "set_part_num": "53020",
+      "set_color_id": 27,
+      "quantity_have": 1,
+      "quantity_allocated": 1,
+      "rel_type": "M"
+    }
+  ],
+  "declined_substitutions": [],
+  "variation_proposals": [
+    {
+      "csv_part_num": "87989",
+      "csv_color_id": 27,
+      "quantity_have": 1,
+      "set_part_num": "53020",
+      "set_part_name": "Equipment Medical Syringe with 2 Holes",
+      "set_color_id": 27,
+      "set_color_name": "Lime",
+      "quantity_required": 2,
+      "rel_type": "M",
+      "csv_image_url": "https://cdn.rebrickable.com/media/parts/elements/4654583.jpg",
+      "csv_image_color_matched": true,
+      "set_image_url": "https://cdn.rebrickable.com/media/parts/elements/6263458.jpg",
+      "set_image_color_matched": true
+    }
+  ],
+  "import_have": [
+    {
+      "part_num": "11212",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "11215",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "11458",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "13770",
+      "color_id": 118,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "13770",
+      "color_id": 297,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "14716",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "15068",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "15397",
+      "color_id": 70,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "15445",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "15573",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 3
+    },
+    {
+      "part_num": "15712",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "18855",
+      "color_id": 323,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "18990",
+      "color_id": 29,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "18990",
+      "color_id": 41,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "23186",
+      "color_id": 84,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "23969",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "23969",
+      "color_id": 41,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "2412b",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "2412b",
+      "color_id": 179,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "2420",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "24201",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2431",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2431",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "2456",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "24946",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "25269",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "2540",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "26047",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "28192",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "298c02",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3003",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3003",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 5
+    },
+    {
+      "part_num": "3004",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3004",
+      "color_id": 326,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3005",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3005pr0024",
+      "color_id": 118,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3005pr0024",
+      "color_id": 182,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "3009",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30162",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3020",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3022",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3022",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3023",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3023",
+      "color_id": 326,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30236",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30237b",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "3024",
+      "color_id": 2,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "3024",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 6
+    },
+    {
+      "part_num": "3024",
+      "color_id": 288,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3029",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3034",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30357",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30377",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3040b",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "30414",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "30414",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "32000",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "32013",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "32056",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "32123b",
+      "color_id": 14,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3245c",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "32607",
+      "color_id": 2,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "32607",
+      "color_id": 10,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "32803",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "3297",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "3297pb053",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3623",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 5
+    },
+    {
+      "part_num": "3626cpr2579",
+      "color_id": 78,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3626cpr3226",
+      "color_id": 92,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "3626cpr3577",
+      "color_id": 92,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3660",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "3660",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "36840",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3749",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3795",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3830",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3831",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "3832",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3899",
+      "color_id": 14,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3937",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "3937c02",
+      "color_id": 1,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "3937c02",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4066",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4081b",
+      "color_id": 7,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4081b",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "41948",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "4274",
+      "color_id": 1,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "4286",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "43093",
+      "color_id": 1,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "44809",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "49153",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "53020",
+      "color_id": 27,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "59349",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "59349",
+      "color_id": 41,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "60208",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "61332",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "6134",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "6141",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6141",
+      "color_id": 34,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "6141",
+      "color_id": 36,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "6141",
+      "color_id": 118,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6180",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "6180pb150",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "62698",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "64453",
+      "color_id": 41,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "64453pb012",
+      "color_id": 118,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "6636",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "67443pr0002",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "67443pr0002",
+      "color_id": 378,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "68068",
+      "color_id": 9999,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "68081pr0002",
+      "color_id": 19,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "68081pr0002",
+      "color_id": 326,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "87079",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "87079",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "87079pb1118",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "87079pb1119",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "87580",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 4
+    },
+    {
+      "part_num": "87989",
+      "color_id": 27,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "88646",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "88646pb014",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "92280",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "92280",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "93273",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 2
+    },
+    {
+      "part_num": "970c05pr1518",
+      "color_id": 272,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "970c12",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "970c19",
+      "color_id": 72,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "973c14h13pr4311",
+      "color_id": 71,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "973c26h02pr5239",
+      "color_id": 484,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "98138",
+      "color_id": 47,
+      "bricklink_color_id": null,
+      "quantity_have": 0
+    },
+    {
+      "part_num": "98560",
+      "color_id": 15,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    },
+    {
+      "part_num": "99930",
+      "color_id": 0,
+      "bricklink_color_id": null,
+      "quantity_have": 1
+    }
+  ],
+  "extra_part_metadata": [
+    {
+      "part_num": "13770",
+      "color_id": 118,
+      "part_name": "Tap 1 x 2 with Dual Handles, Small",
+      "color_name": "",
+      "image_url": ""
+    },
+    {
+      "part_num": "18990",
+      "color_id": 29,
+      "part_name": "Windscreen 4 x 4 x 1 2/3 Canopy Half Sphere with Handle",
+      "color_name": "Bright Pink",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6424856.jpg"
+    },
+    {
+      "part_num": "23969",
+      "color_id": 0,
+      "part_name": "Panel 1 x 2 x 1 with Rounded Corners and 2 Sides",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6174845.jpg"
+    },
+    {
+      "part_num": "2412b",
+      "color_id": 0,
+      "part_name": "Tile Special 1 x 2 Grille with Bottom Groove",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/241226.jpg"
+    },
+    {
+      "part_num": "2431",
+      "color_id": 0,
+      "part_name": "Tile 1 x 4 with Groove",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/243126.jpg"
+    },
+    {
+      "part_num": "3005pr0024",
+      "color_id": 118,
+      "part_name": "Brick 1 x 1 with Mosquito Print",
+      "color_name": "",
+      "image_url": ""
+    },
+    {
+      "part_num": "3022",
+      "color_id": 0,
+      "part_name": "Plate 2 x 2",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/302226.jpg"
+    },
+    {
+      "part_num": "3024",
+      "color_id": 288,
+      "part_name": "Plate 1 x 1",
+      "color_name": "Dark Green",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4271440.jpg"
+    },
+    {
+      "part_num": "30414",
+      "color_id": 0,
+      "part_name": "Brick Special 1 x 4 with 4 Studs on One Side",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4162443.jpg"
+    },
+    {
+      "part_num": "32607",
+      "color_id": 2,
+      "part_name": "Plant, Plate 1 x 1 Round with 3 Leaves",
+      "color_name": "Green",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6229130.jpg"
+    },
+    {
+      "part_num": "3297pb053",
+      "color_id": 15,
+      "part_name": "",
+      "color_name": "",
+      "image_url": ""
+    },
+    {
+      "part_num": "3626cpr3577",
+      "color_id": 92,
+      "part_name": "Minifig Head Ben / James Sirius Potter / Max Dennison, Raised Eyebrows, Slight Smile / Scared Print",
+      "color_name": "",
+      "image_url": ""
+    },
+    {
+      "part_num": "3660",
+      "color_id": 0,
+      "part_name": "Brick Sloped Inverted 45\u00b0 2 x 2 [Ovoid Bottom Pin, Bar-sized Stud Holes]",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/366026.jpg"
+    },
+    {
+      "part_num": "3937c02",
+      "color_id": 1,
+      "part_name": "",
+      "color_name": "",
+      "image_url": ""
+    },
+    {
+      "part_num": "3937c02",
+      "color_id": 71,
+      "part_name": "",
+      "color_name": "",
+      "image_url": ""
+    },
+    {
+      "part_num": "4066",
+      "color_id": 15,
+      "part_name": "Duplo Brick 1 x 2 x 2",
+      "color_name": "White",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4166973.jpg"
+    },
+    {
+      "part_num": "4081b",
+      "color_id": 7,
+      "part_name": "Plate Special 1 x 1 with Clip Light, Bar Hole [Thick Ring]",
+      "color_name": "Light Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/408102.jpg"
+    },
+    {
+      "part_num": "59349",
+      "color_id": 0,
+      "part_name": "Panel 1 x 6 x 5",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4513539.jpg"
+    },
+    {
+      "part_num": "6141",
+      "color_id": 0,
+      "part_name": "Plate Round 1 x 1 with Solid Stud",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/614126.jpg"
+    },
+    {
+      "part_num": "6141",
+      "color_id": 118,
+      "part_name": "Plate Round 1 x 1 with Solid Stud",
+      "color_name": "",
+      "image_url": ""
+    },
+    {
+      "part_num": "6180pb150",
+      "color_id": 0,
+      "part_name": "",
+      "color_name": "",
+      "image_url": ""
+    },
+    {
+      "part_num": "64453pb012",
+      "color_id": 118,
+      "part_name": "",
+      "color_name": "",
+      "image_url": ""
+    },
+    {
+      "part_num": "67443pr0002",
+      "color_id": 19,
+      "part_name": "Animal, Dinosaur, Ankylosaurus, Baby with Tan Spikes and Legs, Sand Green Eyes Print",
+      "color_name": "",
+      "image_url": ""
+    },
+    {
+      "part_num": "68081pr0002",
+      "color_id": 19,
+      "part_name": "Animal, Dinosaur, Triceratops, Baby, Tan Underside, Olive Green Spots Print",
+      "color_name": "",
+      "image_url": ""
+    },
+    {
+      "part_num": "87079pb1118",
+      "color_id": 0,
+      "part_name": "",
+      "color_name": "",
+      "image_url": ""
+    },
+    {
+      "part_num": "87079pb1119",
+      "color_id": 0,
+      "part_name": "",
+      "color_name": "",
+      "image_url": ""
+    },
+    {
+      "part_num": "88646pb014",
+      "color_id": 0,
+      "part_name": "",
+      "color_name": "",
+      "image_url": ""
+    },
+    {
+      "part_num": "92280",
+      "color_id": 72,
+      "part_name": "Plate Special 1 x 2, Top Clip [Split]",
+      "color_name": "Dark Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/ldraw/72/92280.png"
+    },
+    {
+      "part_num": "970c19",
+      "color_id": 72,
+      "part_name": "Hips and Reddish Brown Legs",
+      "color_name": "Dark Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4225787.jpg"
+    }
+  ],
+  "wanted_list_remarks": [],
+  "removal_states": [
+    {
+      "part_num": "13770",
+      "color_id": 118,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "18990",
+      "color_id": 29,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "23969",
+      "color_id": 0,
+      "quantity_to_remove": 2,
+      "removed": true
+    },
+    {
+      "part_num": "2412b",
+      "color_id": 0,
+      "quantity_to_remove": 2,
+      "removed": true
+    },
+    {
+      "part_num": "2431",
+      "color_id": 0,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "3005pr0024",
+      "color_id": 118,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "3022",
+      "color_id": 0,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "3024",
+      "color_id": 288,
+      "quantity_to_remove": 2,
+      "removed": true
+    },
+    {
+      "part_num": "30414",
+      "color_id": 0,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "32607",
+      "color_id": 2,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "3297pb053",
+      "color_id": 15,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "3626cpr3577",
+      "color_id": 92,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "3660",
+      "color_id": 0,
+      "quantity_to_remove": 2,
+      "removed": true
+    },
+    {
+      "part_num": "3937c02",
+      "color_id": 1,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "3937c02",
+      "color_id": 71,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "4066",
+      "color_id": 15,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "4081b",
+      "color_id": 7,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "59349",
+      "color_id": 0,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "6141",
+      "color_id": 0,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "6141",
+      "color_id": 118,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "6180pb150",
+      "color_id": 0,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "64453pb012",
+      "color_id": 118,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "67443pr0002",
+      "color_id": 19,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "68081pr0002",
+      "color_id": 19,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "87079pb1118",
+      "color_id": 0,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "87079pb1119",
+      "color_id": 0,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "88646pb014",
+      "color_id": 0,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "92280",
+      "color_id": 72,
+      "quantity_to_remove": 1,
+      "removed": true
+    },
+    {
+      "part_num": "970c19",
+      "color_id": 72,
+      "quantity_to_remove": 1,
+      "removed": true
+    }
+  ],
+  "import_history": [
+    {
+      "source_name": "brickognize_results_20260824_130325.csv",
+      "content_hash": "75c6f0dde655bf7bf535dd3b4171cb458d8b535b045a606e2f5d8c12859bbc9d",
+      "imported_at": "2026-08-24 13:04:29",
+      "mode": "fill_blanks",
+      "contributions": [
+        {
+          "part_num": "11212",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "11215",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "11458",
+          "color_id": 72,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "13770",
+          "color_id": 118,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "14716",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "15068",
+          "color_id": 272,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "15397",
+          "color_id": 70,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "15573",
+          "color_id": 272,
+          "bricklink_color_id": null,
+          "quantity": 3
+        },
+        {
+          "part_num": "15712",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "18855",
+          "color_id": 323,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "18990",
+          "color_id": 29,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "23186",
+          "color_id": 84,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "23969",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "2412b",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "2420",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "24201",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "2431",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "2431",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "2456",
+          "color_id": 272,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "24946",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "25269",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "2540",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "26047",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "28192",
+          "color_id": 72,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "298c02",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3003",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3003",
+          "color_id": 272,
+          "bricklink_color_id": null,
+          "quantity": 5
+        },
+        {
+          "part_num": "3004",
+          "color_id": 272,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3004",
+          "color_id": 326,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3005",
+          "color_id": 272,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3005pr0024",
+          "color_id": 118,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3009",
+          "color_id": 272,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "30162",
+          "color_id": 72,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3020",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3022",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3022",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3023",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3023",
+          "color_id": 326,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "30236",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "30237b",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 4
+        },
+        {
+          "part_num": "3024",
+          "color_id": 272,
+          "bricklink_color_id": null,
+          "quantity": 6
+        },
+        {
+          "part_num": "3024",
+          "color_id": 288,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3029",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3034",
+          "color_id": 272,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "30357",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "30377",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3040b",
+          "color_id": 272,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "30414",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "32000",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "32013",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "32056",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "32123b",
+          "color_id": 14,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "32607",
+          "color_id": 2,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "32607",
+          "color_id": 10,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3297pb053",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3623",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 5
+        },
+        {
+          "part_num": "3626cpr2579",
+          "color_id": 78,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3626cpr3577",
+          "color_id": 92,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3660",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "3660",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 4
+        },
+        {
+          "part_num": "36840",
+          "color_id": 72,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3749",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3795",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3830",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3832",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3899",
+          "color_id": 14,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3937c02",
+          "color_id": 1,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "3937c02",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "4066",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "4081b",
+          "color_id": 7,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "41948",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "4274",
+          "color_id": 1,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "4286",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "43093",
+          "color_id": 1,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "44809",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "49153",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "59349",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "60208",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "61332",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "6141",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "6141",
+          "color_id": 118,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "6180pb150",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "64453pb012",
+          "color_id": 118,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "6636",
+          "color_id": 72,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "67443pr0002",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "68081pr0002",
+          "color_id": 19,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "87079",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "87079pb1118",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "87079pb1119",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "87580",
+          "color_id": 72,
+          "bricklink_color_id": null,
+          "quantity": 4
+        },
+        {
+          "part_num": "87989",
+          "color_id": 27,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "88646pb014",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "92280",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "92280",
+          "color_id": 72,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "93273",
+          "color_id": 272,
+          "bricklink_color_id": null,
+          "quantity": 2
+        },
+        {
+          "part_num": "970c05pr1518",
+          "color_id": 272,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "970c19",
+          "color_id": 72,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "973c14h13pr4311",
+          "color_id": 71,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "973c26h02pr5239",
+          "color_id": 484,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "98560",
+          "color_id": 15,
+          "bricklink_color_id": null,
+          "quantity": 1
+        },
+        {
+          "part_num": "99930",
+          "color_id": 0,
+          "bricklink_color_id": null,
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "report_snapshot": [
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6182261.jpg",
+      "bricklink_part_num": "32607",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 36,
+      "part_num": "32607",
+      "part_name": "Plant, Plate 1 x 1 Round with 3 Leaves",
+      "color_id": 10,
+      "color_name": "Bright Green",
+      "quantity_required": 3,
+      "quantity_have": 2,
+      "quantity_missing": 1,
+      "quantity_extra": 0,
+      "status": "Missing",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": ""
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4527063.jpg",
+      "bricklink_part_num": "62698",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 11,
+      "part_num": "62698",
+      "part_name": "Equipment Laptop",
+      "color_id": 0,
+      "color_name": "Black",
+      "quantity_required": 1,
+      "quantity_have": 0,
+      "quantity_missing": 1,
+      "quantity_extra": 0,
+      "status": "Missing",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": ""
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/photos/9999/68068-9999-7e05985d-54f6-4dae-89a1-16d76f6deb4d.jpg",
+      "bricklink_part_num": "75939stk01",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 0,
+      "part_num": "68068",
+      "part_name": "Sticker Sheet for Set 75939-1",
+      "color_id": 9999,
+      "color_name": "[No Color/Any Color]",
+      "quantity_required": 1,
+      "quantity_have": 0,
+      "quantity_missing": 1,
+      "quantity_extra": 0,
+      "status": "Missing",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": ""
+    },
+    {
+      "image_url": "",
+      "bricklink_part_num": "13770",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 41,
+      "part_num": "13770",
+      "part_name": "Tap 1 x 2 with Dual Handles, Small",
+      "color_id": 118,
+      "color_name": "",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6424856.jpg",
+      "bricklink_part_num": "18990",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 104,
+      "part_num": "18990",
+      "part_name": "Windscreen 4 x 4 x 1 2/3 Canopy Half Sphere with Handle",
+      "color_id": 29,
+      "color_name": "Bright Pink",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6174845.jpg",
+      "bricklink_part_num": "23969",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 11,
+      "part_num": "23969",
+      "part_name": "Panel 1 x 2 x 1 with Rounded Corners and 2 Sides",
+      "color_id": 0,
+      "color_name": "Black",
+      "quantity_required": 0,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 2,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/241226.jpg",
+      "bricklink_part_num": "2412b",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 11,
+      "part_num": "2412b",
+      "part_name": "Tile Special 1 x 2 Grille with Bottom Groove",
+      "color_id": 0,
+      "color_name": "Black",
+      "quantity_required": 0,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 2,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/243126.jpg",
+      "bricklink_part_num": "2431",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 11,
+      "part_num": "2431",
+      "part_name": "Tile 1 x 4 with Groove",
+      "color_id": 0,
+      "color_name": "Black",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "",
+      "bricklink_part_num": "3005pb041",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 41,
+      "part_num": "3005pr0024",
+      "part_name": "Brick 1 x 1 with Mosquito Print",
+      "color_id": 118,
+      "color_name": "",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/302226.jpg",
+      "bricklink_part_num": "3022",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 11,
+      "part_num": "3022",
+      "part_name": "Plate 2 x 2",
+      "color_id": 0,
+      "color_name": "Black",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4271440.jpg",
+      "bricklink_part_num": "3024",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 80,
+      "part_num": "3024",
+      "part_name": "Plate 1 x 1",
+      "color_id": 288,
+      "color_name": "Dark Green",
+      "quantity_required": 0,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 2,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4162443.jpg",
+      "bricklink_part_num": "30414",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 11,
+      "part_num": "30414",
+      "part_name": "Brick Special 1 x 4 with 4 Studs on One Side",
+      "color_id": 0,
+      "color_name": "Black",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6229130.jpg",
+      "bricklink_part_num": "32607",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 6,
+      "part_num": "32607",
+      "part_name": "Plant, Plate 1 x 1 Round with 3 Leaves",
+      "color_id": 2,
+      "color_name": "Green",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "",
+      "bricklink_part_num": "3297pb053",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 1,
+      "part_num": "3297pb053",
+      "part_name": "",
+      "color_id": 15,
+      "color_name": "",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "",
+      "bricklink_part_num": "3626pb2878",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 28,
+      "part_num": "3626cpr3577",
+      "part_name": "Minifig Head Ben / James Sirius Potter / Max Dennison, Raised Eyebrows, Slight Smile / Scared Print",
+      "color_id": 92,
+      "color_name": "",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/366026.jpg",
+      "bricklink_part_num": "3660",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 11,
+      "part_num": "3660",
+      "part_name": "Brick Sloped Inverted 45\u00b0 2 x 2 [Ovoid Bottom Pin, Bar-sized Stud Holes]",
+      "color_id": 0,
+      "color_name": "Black",
+      "quantity_required": 0,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 2,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "",
+      "bricklink_part_num": "3937c02",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 7,
+      "part_num": "3937c02",
+      "part_name": "",
+      "color_id": 1,
+      "color_name": "",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "",
+      "bricklink_part_num": "3937c02",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 86,
+      "part_num": "3937c02",
+      "part_name": "",
+      "color_id": 71,
+      "color_name": "",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4166973.jpg",
+      "bricklink_part_num": "4066",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 1,
+      "part_num": "4066",
+      "part_name": "Duplo Brick 1 x 2 x 2",
+      "color_id": 15,
+      "color_name": "White",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/408102.jpg",
+      "bricklink_part_num": "4081b",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 9,
+      "part_num": "4081b",
+      "part_name": "Plate Special 1 x 1 with Clip Light, Bar Hole [Thick Ring]",
+      "color_id": 7,
+      "color_name": "Light Gray",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4513539.jpg",
+      "bricklink_part_num": "59349",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 11,
+      "part_num": "59349",
+      "part_name": "Panel 1 x 6 x 5",
+      "color_id": 0,
+      "color_name": "Black",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/614126.jpg",
+      "bricklink_part_num": "4073",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 11,
+      "part_num": "6141",
+      "part_name": "Plate Round 1 x 1 with Solid Stud",
+      "color_id": 0,
+      "color_name": "Black",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "",
+      "bricklink_part_num": "4073",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 41,
+      "part_num": "6141",
+      "part_name": "Plate Round 1 x 1 with Solid Stud",
+      "color_id": 118,
+      "color_name": "",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "",
+      "bricklink_part_num": "6180pb150",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 11,
+      "part_num": "6180pb150",
+      "part_name": "",
+      "color_id": 0,
+      "color_name": "",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "",
+      "bricklink_part_num": "64453pb012",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 41,
+      "part_num": "64453pb012",
+      "part_name": "",
+      "color_id": 118,
+      "color_name": "",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "",
+      "bricklink_part_num": "67443pb01",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 2,
+      "part_num": "67443pr0002",
+      "part_name": "Animal, Dinosaur, Ankylosaurus, Baby with Tan Spikes and Legs, Sand Green Eyes Print",
+      "color_id": 19,
+      "color_name": "",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "",
+      "bricklink_part_num": "bb1151c01pb01",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 2,
+      "part_num": "68081pr0002",
+      "part_name": "Animal, Dinosaur, Triceratops, Baby, Tan Underside, Olive Green Spots Print",
+      "color_id": 19,
+      "color_name": "",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "",
+      "bricklink_part_num": "87079pb1118",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 11,
+      "part_num": "87079pb1118",
+      "part_name": "",
+      "color_id": 0,
+      "color_name": "",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "",
+      "bricklink_part_num": "87079pb1119",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 11,
+      "part_num": "87079pb1119",
+      "part_name": "",
+      "color_id": 0,
+      "color_name": "",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "",
+      "bricklink_part_num": "88646pb014",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 11,
+      "part_num": "88646pb014",
+      "part_name": "",
+      "color_id": 0,
+      "color_name": "",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/ldraw/72/92280.png",
+      "bricklink_part_num": "92280",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 85,
+      "part_num": "92280",
+      "part_name": "Plate Special 1 x 2, Top Clip [Split]",
+      "color_id": 72,
+      "color_name": "Dark Bluish Gray",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    },
+    {
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4225787.jpg",
+      "bricklink_part_num": "970c00",
+      "bricklink_part_candidates": null,
+      "bricklink_color_id": 85,
+      "part_num": "970c19",
+      "part_name": "Hips and Reddish Brown Legs",
+      "color_id": 72,
+      "color_name": "Dark Bluish Gray",
+      "quantity_required": 0,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": "",
+      "variation_note": "",
+      "removal_status": "Removed"
+    }
+  ],
+  "wanted_list_snapshot": [
+    {
+      "part_num": "11212",
+      "color_id": 71,
+      "part_name": "Plate 3 x 3",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6015347.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "11212",
+      "bricklink_color_id": 86,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "11215",
+      "color_id": 71,
+      "part_name": "Bracket 5 x 2 x 1 1/3 with Holes, Pin Bottom",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6028811.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "11215",
+      "bricklink_color_id": 86,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "11458",
+      "color_id": 72,
+      "part_name": "Plate Special 1 x 2 with Pin Hole on Top",
+      "color_name": "Dark Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6019987.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "11458",
+      "bricklink_color_id": 85,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "13770",
+      "color_id": 297,
+      "part_name": "Tap 1 x 2 with Dual Handles, Small",
+      "color_name": "Pearl Gold",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6044591.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "13770",
+      "bricklink_color_id": 115,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "14716",
+      "color_id": 71,
+      "part_name": "Brick 1 x 1 x 3",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6061702.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "14716",
+      "bricklink_color_id": 86,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "15068",
+      "color_id": 272,
+      "part_name": "Brick Curved 2 x 2 x 2/3",
+      "color_name": "Dark Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6061569.jpg",
+      "quantity_required": 3,
+      "bricklink_part_num": "15068",
+      "bricklink_color_id": 63,
+      "quantity_have": 3,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "15397",
+      "color_id": 70,
+      "part_name": "Plate 3 x 3 Cross",
+      "color_name": "Reddish Brown",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6050918.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "15397",
+      "bricklink_color_id": 88,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "15445",
+      "color_id": 72,
+      "part_name": "Weapon Gun Automatic Pistol with Top Clip",
+      "color_name": "Dark Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6055607.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "15445",
+      "bricklink_color_id": 85,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "15573",
+      "color_id": 272,
+      "part_name": "Plate Special 1 x 2 with 1 Stud with Groove and Inside Stud Holder (Jumper)",
+      "color_name": "Dark Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6092588.jpg",
+      "quantity_required": 3,
+      "bricklink_part_num": "15573",
+      "bricklink_color_id": 63,
+      "quantity_have": 3,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "15712",
+      "color_id": 71,
+      "part_name": "Tile Special 1 x 1 with Clip with Rounded Edges",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6071229.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "15712",
+      "bricklink_color_id": 86,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "18855",
+      "color_id": 323,
+      "part_name": "Equipment Baby Bottle with Handle",
+      "color_name": "Light Aqua",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6102882.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "18855",
+      "bricklink_color_id": 152,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "18990",
+      "color_id": 41,
+      "part_name": "Windscreen 4 x 4 x 1 2/3 Canopy Half Sphere with Handle",
+      "color_name": "Trans-Light Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6268646.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "18990",
+      "bricklink_color_id": 15,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "23186",
+      "color_id": 84,
+      "part_name": "Hair Swept Left Tousled [Plain]",
+      "color_name": "Medium Nougat",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6145528.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "23186",
+      "bricklink_color_id": 150,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "23969",
+      "color_id": 41,
+      "part_name": "Panel 1 x 2 x 1 with Rounded Corners and 2 Sides",
+      "color_name": "Trans-Light Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6138481.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "23969",
+      "bricklink_color_id": 15,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "2412b",
+      "color_id": 179,
+      "part_name": "Tile Special 1 x 2 Grille with Bottom Groove",
+      "color_name": "Flat Silver",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4619636.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "2412b",
+      "bricklink_color_id": 95,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "2420",
+      "color_id": 71,
+      "part_name": "Plate 2 x 2 Corner",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211353.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "2420",
+      "bricklink_color_id": 86,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "24201",
+      "color_id": 71,
+      "part_name": "Brick Curved Inverted 2 x 1",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6144138.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "24201",
+      "bricklink_color_id": 86,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "2431",
+      "color_id": 71,
+      "part_name": "Tile 1 x 4 with Groove",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211356.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "2431",
+      "bricklink_color_id": 86,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "2456",
+      "color_id": 272,
+      "part_name": "Brick 2 x 6",
+      "color_name": "Dark Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4649967.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "2456",
+      "bricklink_color_id": 63,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "24946",
+      "color_id": 15,
+      "part_name": "Food Egg with 1.5mm Hole [Plain]",
+      "color_name": "White",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6143595.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "24946",
+      "bricklink_color_id": 1,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "25269",
+      "color_id": 71,
+      "part_name": "Tile Round 1 x 1 Quarter",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6176433.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "25269",
+      "bricklink_color_id": 86,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "2540",
+      "color_id": 0,
+      "part_name": "Plate Special 1 x 2 Side Handle [Free Ends]",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/254026.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "2540",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "26047",
+      "color_id": 71,
+      "part_name": "Plate Special 1 x 1 Rounded with Handle",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6225246.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "26047",
+      "bricklink_color_id": 86,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "28192",
+      "color_id": 72,
+      "part_name": "Brick Sloped 45\u00b0 2 x 1 with 2/3 Inverted Cutout and no stud",
+      "color_name": "Dark Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6168776.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "28192",
+      "bricklink_color_id": 85,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "298c02",
+      "color_id": 0,
+      "part_name": "Lever Small Base with Black Lever",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/73587.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "4592c02",
+      "bricklink_color_id": 11,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3003",
+      "color_id": 71,
+      "part_name": "Brick 2 x 2",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211387.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3003",
+      "bricklink_color_id": 86,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3003",
+      "color_id": 272,
+      "part_name": "Brick 2 x 2",
+      "color_name": "Dark Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4296785.jpg",
+      "quantity_required": 5,
+      "bricklink_part_num": "3003",
+      "bricklink_color_id": 63,
+      "quantity_have": 5,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3004",
+      "color_id": 272,
+      "part_name": "Brick 1 x 2",
+      "color_name": "Dark Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4249891.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "3004",
+      "bricklink_color_id": 63,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3004",
+      "color_id": 326,
+      "part_name": "Brick 1 x 2",
+      "color_name": "Olive Green",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6024722.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3004",
+      "bricklink_color_id": 155,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3005",
+      "color_id": 272,
+      "part_name": "Brick 1 x 1",
+      "color_name": "Dark Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4255413.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3005",
+      "bricklink_color_id": 63,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3005pr0024",
+      "color_id": 182,
+      "part_name": "Brick 1 x 1 with Mosquito Print",
+      "color_name": "Trans-Orange",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6308322.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3005pb041",
+      "bricklink_color_id": 98,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3009",
+      "color_id": 272,
+      "part_name": "Brick 1 x 6",
+      "color_name": "Dark Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6221672.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3009",
+      "bricklink_color_id": 63,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "30162",
+      "color_id": 72,
+      "part_name": "Equipment Binoculars",
+      "color_name": "Dark Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211051.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "30162",
+      "bricklink_color_id": 85,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3020",
+      "color_id": 15,
+      "part_name": "Plate 2 x 4",
+      "color_name": "White",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/302001.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "3020",
+      "bricklink_color_id": 1,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3022",
+      "color_id": 71,
+      "part_name": "Plate 2 x 2",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211397.jpg",
+      "quantity_required": 3,
+      "bricklink_part_num": "3022",
+      "bricklink_color_id": 86,
+      "quantity_have": 3,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3023",
+      "color_id": 71,
+      "part_name": "Plate 1 x 2",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211398.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "3023",
+      "bricklink_color_id": 86,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3023",
+      "color_id": 326,
+      "part_name": "Plate 1 x 2",
+      "color_name": "Olive Green",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6016483.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3023",
+      "bricklink_color_id": 155,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "30236",
+      "color_id": 71,
+      "part_name": "Brick Special 1 x 2 with Handle",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211580.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "30236",
+      "bricklink_color_id": 86,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "30237b",
+      "color_id": 71,
+      "part_name": "Brick Special 1 x 2 with Vertical Clip [Open O Clip]",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4641682.jpg",
+      "quantity_required": 4,
+      "bricklink_part_num": "30237b",
+      "bricklink_color_id": 86,
+      "quantity_have": 4,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3024",
+      "color_id": 2,
+      "part_name": "Plate 1 x 1",
+      "color_name": "Green",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/302428.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "3024",
+      "bricklink_color_id": 6,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3024",
+      "color_id": 272,
+      "part_name": "Plate 1 x 1",
+      "color_name": "Dark Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4184108.jpg",
+      "quantity_required": 6,
+      "bricklink_part_num": "3024",
+      "bricklink_color_id": 63,
+      "quantity_have": 6,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3029",
+      "color_id": 15,
+      "part_name": "Plate 4 x 12",
+      "color_name": "White",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/302901.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3029",
+      "bricklink_color_id": 1,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3034",
+      "color_id": 272,
+      "part_name": "Plate 2 x 8",
+      "color_name": "Dark Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4252662.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3034",
+      "bricklink_color_id": 63,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "30357",
+      "color_id": 71,
+      "part_name": "Plate Round Corner 3 x 3",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211756.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "30357",
+      "bricklink_color_id": 86,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "30377",
+      "color_id": 71,
+      "part_name": "Arm Mechanical with 2 Clips [Battle Droid]",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211658.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "30377",
+      "bricklink_color_id": 86,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3040b",
+      "color_id": 272,
+      "part_name": "Brick Sloped 45\u00b0 2 x 1 with Bottom Pin",
+      "color_name": "Dark Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4187118.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "3040",
+      "bricklink_color_id": 63,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "30414",
+      "color_id": 71,
+      "part_name": "Brick Special 1 x 4 with 4 Studs on One Side",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211636.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "30414",
+      "bricklink_color_id": 86,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "32000",
+      "color_id": 15,
+      "part_name": "Technic Brick 1 x 2 [2 Pin Holes]",
+      "color_name": "White",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/3200001.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "32000",
+      "bricklink_color_id": 1,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "32013",
+      "color_id": 71,
+      "part_name": "Technic Axle and Pin Connector Angled #1",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211550.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "32013",
+      "bricklink_color_id": 86,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "32056",
+      "color_id": 0,
+      "part_name": "Technic Beam 3 x 3 L-Shape Thin",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4112287.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "32056",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "32123b",
+      "color_id": 14,
+      "part_name": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced",
+      "color_name": "Yellow",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6271167.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "4265c",
+      "bricklink_color_id": 3,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3245c",
+      "color_id": 15,
+      "part_name": "Brick 1 x 2 x 2 with Inside Stud Holder",
+      "color_name": "White",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4113261.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3245c",
+      "bricklink_color_id": 1,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "32803",
+      "color_id": 71,
+      "part_name": "Brick Curved Inverted 2 x 2 x 2/3",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6185676.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "32803",
+      "bricklink_color_id": 86,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3297",
+      "color_id": 15,
+      "part_name": "Brick Sloped 33\u00b0 3 x 4",
+      "color_name": "White",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/329701.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3297",
+      "bricklink_color_id": 1,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3623",
+      "color_id": 71,
+      "part_name": "Plate 1 x 3",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211429.jpg",
+      "quantity_required": 5,
+      "bricklink_part_num": "3623",
+      "bricklink_color_id": 86,
+      "quantity_have": 5,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3626cpr2579",
+      "color_id": 78,
+      "part_name": "Minifig Head Owen Grady / Starlord, Stoppled Beard, Sideburns, Mustache, Raised Left Eyebrow and Smile / Firm Print",
+      "color_name": "Light Nougat",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6223239.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3626pb2124",
+      "bricklink_color_id": 90,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3626cpr3226",
+      "color_id": 92,
+      "part_name": "Minifig Head Dr Wu, Grin / Scared Open Mouth Print",
+      "color_name": "Nougat",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6302086.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3626pb2639",
+      "bricklink_color_id": 28,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3660",
+      "color_id": 71,
+      "part_name": "Brick Sloped Inverted 45\u00b0 2 x 2 [Ovoid Bottom Pin, Bar-sized Stud Holes]",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211436.jpg",
+      "quantity_required": 6,
+      "bricklink_part_num": "3660",
+      "bricklink_color_id": 86,
+      "quantity_have": 6,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "36840",
+      "color_id": 72,
+      "part_name": "Bracket 1 x 1 - 1 x 1 Inverted",
+      "color_name": "Dark Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6225494.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "36840",
+      "bricklink_color_id": 85,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3749",
+      "color_id": 19,
+      "part_name": "Technic Axle Pin without Friction Ridges Lengthwise",
+      "color_name": "Tan",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4186017.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3749",
+      "bricklink_color_id": 2,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3795",
+      "color_id": 71,
+      "part_name": "Plate 2 x 6",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211452.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3795",
+      "bricklink_color_id": 86,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3830",
+      "color_id": 0,
+      "part_name": "Hinge Brick 1 x 4 [Upper]",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/383026.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3830",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3831",
+      "color_id": 0,
+      "part_name": "Hinge Brick 1 x 4 [Lower]",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/383126.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3831",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3832",
+      "color_id": 15,
+      "part_name": "Plate 2 x 10",
+      "color_name": "White",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/383201.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3832",
+      "bricklink_color_id": 1,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3899",
+      "color_id": 14,
+      "part_name": "Equipment Cup / Mug [Plain]",
+      "color_name": "Yellow",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/389924.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3899",
+      "bricklink_color_id": 3,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3937",
+      "color_id": 71,
+      "part_name": "Hinge Brick 1 x 2 Base",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211469.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "3937",
+      "bricklink_color_id": 86,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "4081b",
+      "color_id": 71,
+      "part_name": "Plate Special 1 x 1 with Clip Light, Bar Hole [Thick Ring]",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211477.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "4081b",
+      "bricklink_color_id": 86,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "41948",
+      "color_id": 15,
+      "part_name": "Plate 8 x 8 with Rounded End",
+      "color_name": "White",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6249095.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "41948",
+      "bricklink_color_id": 1,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "4274",
+      "color_id": 1,
+      "part_name": "Technic Pin 1/2",
+      "color_name": "Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4143005.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "4274",
+      "bricklink_color_id": 7,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "4286",
+      "color_id": 71,
+      "part_name": "Brick Sloped 33\u00b0 3 x 1",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211488.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "4286",
+      "bricklink_color_id": 86,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "43093",
+      "color_id": 1,
+      "part_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+      "color_name": "Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4206482.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "43093",
+      "bricklink_color_id": 7,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "44809",
+      "color_id": 71,
+      "part_name": "Technic Pin Connector Perpendicular 2 x 2 Bent",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4211880.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "44809",
+      "bricklink_color_id": 86,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "49153",
+      "color_id": 71,
+      "part_name": "Tile Special 2 x 2 with Top Pin [Squared Holes]",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6313188.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "2460",
+      "bricklink_color_id": 86,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "53020",
+      "color_id": 27,
+      "part_name": "Equipment Medical Syringe with 2 Holes",
+      "color_name": "Lime",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6263458.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "53020",
+      "bricklink_color_id": 34,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "59349",
+      "color_id": 41,
+      "part_name": "Panel 1 x 6 x 5",
+      "color_name": "Trans-Light Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4505000.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "59349",
+      "bricklink_color_id": 15,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "60208",
+      "color_id": 15,
+      "part_name": "Wheel 31 x 15 Technic, 7 Pin Holes",
+      "color_name": "White",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4512751.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "60208",
+      "bricklink_color_id": 1,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "61332",
+      "color_id": 0,
+      "part_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6279875.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "2780",
+      "bricklink_color_id": 11,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "6134",
+      "color_id": 0,
+      "part_name": "Hinge Brick 2 x 2 Top Plate Thin",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4124096.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "6134",
+      "bricklink_color_id": 11,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "6141",
+      "color_id": 34,
+      "part_name": "Plate Round 1 x 1 with Solid Stud",
+      "color_name": "Trans-Green",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/3005748.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "4073",
+      "bricklink_color_id": 20,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "6141",
+      "color_id": 36,
+      "part_name": "Plate Round 1 x 1 with Solid Stud",
+      "color_name": "Trans-Red",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/3005741.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "4073",
+      "bricklink_color_id": 17,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "6180",
+      "color_id": 0,
+      "part_name": "Plate Special 4 x 6 with Studs on 3 Edges",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/618026.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "6180",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "64453",
+      "color_id": 41,
+      "part_name": "Windscreen 1 x 6 x 3",
+      "color_name": "Trans-Light Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4546691.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "64453",
+      "bricklink_color_id": 15,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "6636",
+      "color_id": 72,
+      "part_name": "Tile 1 x 6 with Groove",
+      "color_name": "Dark Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4210651.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "6636",
+      "bricklink_color_id": 85,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "67443pr0002",
+      "color_id": 378,
+      "part_name": "Animal, Dinosaur, Ankylosaurus, Baby with Tan Spikes and Legs, Sand Green Eyes Print",
+      "color_name": "Sand Green",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6302089.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "67443pb01",
+      "bricklink_color_id": 48,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "68081pr0002",
+      "color_id": 326,
+      "part_name": "Animal, Dinosaur, Triceratops, Baby, Tan Underside, Olive Green Spots Print",
+      "color_name": "Olive Green",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6302162.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "bb1151c01pb01",
+      "bricklink_color_id": 155,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "87079",
+      "color_id": 0,
+      "part_name": "Tile 2 x 4 with Groove",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4560182.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "87079",
+      "bricklink_color_id": 11,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "87079",
+      "color_id": 15,
+      "part_name": "Tile 2 x 4 with Groove",
+      "color_name": "White",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4560178.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "87079",
+      "bricklink_color_id": 1,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "87580",
+      "color_id": 72,
+      "part_name": "Plate Special 2 x 2 with Groove and Center Stud (Jumper)",
+      "color_name": "Dark Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4565322.jpg",
+      "quantity_required": 4,
+      "bricklink_part_num": "87580",
+      "bricklink_color_id": 85,
+      "quantity_have": 4,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "88646",
+      "color_id": 0,
+      "part_name": "Plate Special 3 x 4 with 1 x 4 Center Studs [Plain]",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4571146.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "88646",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "92280",
+      "color_id": 71,
+      "part_name": "Plate Special 1 x 2, Top Clip [Split]",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/ldraw/71/92280.png",
+      "quantity_required": 2,
+      "bricklink_part_num": "92280",
+      "bricklink_color_id": 86,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "93273",
+      "color_id": 272,
+      "part_name": "Brick Curved 4 x 1 Double with No Studs",
+      "color_name": "Dark Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6037886.jpg",
+      "quantity_required": 2,
+      "bricklink_part_num": "93273",
+      "bricklink_color_id": 63,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "970c05pr1518",
+      "color_id": 272,
+      "part_name": "Hips and Dark Blue Legs with Uniform Overall Brown Belt, Pockets",
+      "color_name": "Dark Blue",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6226515.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "970c00pb0821",
+      "bricklink_color_id": 63,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "970c12",
+      "color_id": 72,
+      "part_name": "Hips and Dark Bluish Gray Legs",
+      "color_name": "Dark Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4222693.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "970c12",
+      "bricklink_color_id": 85,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "973c14h13pr4311",
+      "color_id": 71,
+      "part_name": "Torso Jacket, ID Badge, Black Sweater Print, Light Bluish Gray Arms, Nougat Hands",
+      "color_name": "Light Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6225838.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "973pb3184c01",
+      "bricklink_color_id": 86,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "973c26h02pr5239",
+      "color_id": 484,
+      "part_name": "Torso Vest Jacket, Open over Tan Shirt, Shoulder Strap with Canisters Print, Tan Arms, Light Nougat Hands",
+      "color_name": "Dark Orange",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6311431.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "973pb3961c01",
+      "bricklink_color_id": 68,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "98138",
+      "color_id": 47,
+      "part_name": "Tile Round 1 x 1",
+      "color_name": "Trans-Clear",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4650498.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "98138",
+      "bricklink_color_id": 12,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "98560",
+      "color_id": 15,
+      "part_name": "Brick Sloped 75\u00b0 2 x 2 x 3 [Solid Studs]",
+      "color_name": "White",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6004491.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "3684c",
+      "bricklink_color_id": 1,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "99930",
+      "color_id": 0,
+      "part_name": "Hair Smooth Combed Sideways",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4653226.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "99930",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 0,
+      "status": "Complete",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "32607",
+      "color_id": 10,
+      "part_name": "Plant, Plate 1 x 1 Round with 3 Leaves",
+      "color_name": "Bright Green",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6182261.jpg",
+      "quantity_required": 3,
+      "bricklink_part_num": "32607",
+      "bricklink_color_id": 36,
+      "quantity_have": 2,
+      "quantity_missing": 1,
+      "quantity_extra": 0,
+      "status": "Missing",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "62698",
+      "color_id": 0,
+      "part_name": "Equipment Laptop",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4527063.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "62698",
+      "bricklink_color_id": 11,
+      "quantity_have": 0,
+      "quantity_missing": 1,
+      "quantity_extra": 0,
+      "status": "Missing",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "68068",
+      "color_id": 9999,
+      "part_name": "Sticker Sheet for Set 75939-1",
+      "color_name": "[No Color/Any Color]",
+      "image_url": "https://cdn.rebrickable.com/media/parts/photos/9999/68068-9999-7e05985d-54f6-4dae-89a1-16d76f6deb4d.jpg",
+      "quantity_required": 1,
+      "bricklink_part_num": "75939stk01",
+      "bricklink_color_id": 0,
+      "quantity_have": 0,
+      "quantity_missing": 1,
+      "quantity_extra": 0,
+      "status": "Missing",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "13770",
+      "color_id": 118,
+      "part_name": "Tap 1 x 2 with Dual Handles, Small",
+      "color_name": "",
+      "image_url": "",
+      "quantity_required": 0,
+      "bricklink_part_num": "13770",
+      "bricklink_color_id": 41,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "18990",
+      "color_id": 29,
+      "part_name": "Windscreen 4 x 4 x 1 2/3 Canopy Half Sphere with Handle",
+      "color_name": "Bright Pink",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6424856.jpg",
+      "quantity_required": 0,
+      "bricklink_part_num": "18990",
+      "bricklink_color_id": 104,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "23969",
+      "color_id": 0,
+      "part_name": "Panel 1 x 2 x 1 with Rounded Corners and 2 Sides",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6174845.jpg",
+      "quantity_required": 0,
+      "bricklink_part_num": "23969",
+      "bricklink_color_id": 11,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 2,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "2412b",
+      "color_id": 0,
+      "part_name": "Tile Special 1 x 2 Grille with Bottom Groove",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/241226.jpg",
+      "quantity_required": 0,
+      "bricklink_part_num": "2412b",
+      "bricklink_color_id": 11,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 2,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "2431",
+      "color_id": 0,
+      "part_name": "Tile 1 x 4 with Groove",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/243126.jpg",
+      "quantity_required": 0,
+      "bricklink_part_num": "2431",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3005pr0024",
+      "color_id": 118,
+      "part_name": "Brick 1 x 1 with Mosquito Print",
+      "color_name": "",
+      "image_url": "",
+      "quantity_required": 0,
+      "bricklink_part_num": "3005pb041",
+      "bricklink_color_id": 41,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3022",
+      "color_id": 0,
+      "part_name": "Plate 2 x 2",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/302226.jpg",
+      "quantity_required": 0,
+      "bricklink_part_num": "3022",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3024",
+      "color_id": 288,
+      "part_name": "Plate 1 x 1",
+      "color_name": "Dark Green",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4271440.jpg",
+      "quantity_required": 0,
+      "bricklink_part_num": "3024",
+      "bricklink_color_id": 80,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 2,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "30414",
+      "color_id": 0,
+      "part_name": "Brick Special 1 x 4 with 4 Studs on One Side",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4162443.jpg",
+      "quantity_required": 0,
+      "bricklink_part_num": "30414",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "32607",
+      "color_id": 2,
+      "part_name": "Plant, Plate 1 x 1 Round with 3 Leaves",
+      "color_name": "Green",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/6229130.jpg",
+      "quantity_required": 0,
+      "bricklink_part_num": "32607",
+      "bricklink_color_id": 6,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3297pb053",
+      "color_id": 15,
+      "part_name": "",
+      "color_name": "",
+      "image_url": "",
+      "quantity_required": 0,
+      "bricklink_part_num": "3297pb053",
+      "bricklink_color_id": 1,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3626cpr3577",
+      "color_id": 92,
+      "part_name": "Minifig Head Ben / James Sirius Potter / Max Dennison, Raised Eyebrows, Slight Smile / Scared Print",
+      "color_name": "",
+      "image_url": "",
+      "quantity_required": 0,
+      "bricklink_part_num": "3626pb2878",
+      "bricklink_color_id": 28,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3660",
+      "color_id": 0,
+      "part_name": "Brick Sloped Inverted 45\u00b0 2 x 2 [Ovoid Bottom Pin, Bar-sized Stud Holes]",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/366026.jpg",
+      "quantity_required": 0,
+      "bricklink_part_num": "3660",
+      "bricklink_color_id": 11,
+      "quantity_have": 2,
+      "quantity_missing": 0,
+      "quantity_extra": 2,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3937c02",
+      "color_id": 1,
+      "part_name": "",
+      "color_name": "",
+      "image_url": "",
+      "quantity_required": 0,
+      "bricklink_part_num": "3937c02",
+      "bricklink_color_id": 7,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "3937c02",
+      "color_id": 71,
+      "part_name": "",
+      "color_name": "",
+      "image_url": "",
+      "quantity_required": 0,
+      "bricklink_part_num": "3937c02",
+      "bricklink_color_id": 86,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "4066",
+      "color_id": 15,
+      "part_name": "Duplo Brick 1 x 2 x 2",
+      "color_name": "White",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4166973.jpg",
+      "quantity_required": 0,
+      "bricklink_part_num": "4066",
+      "bricklink_color_id": 1,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "4081b",
+      "color_id": 7,
+      "part_name": "Plate Special 1 x 1 with Clip Light, Bar Hole [Thick Ring]",
+      "color_name": "Light Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/408102.jpg",
+      "quantity_required": 0,
+      "bricklink_part_num": "4081b",
+      "bricklink_color_id": 9,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "59349",
+      "color_id": 0,
+      "part_name": "Panel 1 x 6 x 5",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4513539.jpg",
+      "quantity_required": 0,
+      "bricklink_part_num": "59349",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "6141",
+      "color_id": 0,
+      "part_name": "Plate Round 1 x 1 with Solid Stud",
+      "color_name": "Black",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/614126.jpg",
+      "quantity_required": 0,
+      "bricklink_part_num": "4073",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "6141",
+      "color_id": 118,
+      "part_name": "Plate Round 1 x 1 with Solid Stud",
+      "color_name": "",
+      "image_url": "",
+      "quantity_required": 0,
+      "bricklink_part_num": "4073",
+      "bricklink_color_id": 41,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "6180pb150",
+      "color_id": 0,
+      "part_name": "",
+      "color_name": "",
+      "image_url": "",
+      "quantity_required": 0,
+      "bricklink_part_num": "6180pb150",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "64453pb012",
+      "color_id": 118,
+      "part_name": "",
+      "color_name": "",
+      "image_url": "",
+      "quantity_required": 0,
+      "bricklink_part_num": "64453pb012",
+      "bricklink_color_id": 41,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "67443pr0002",
+      "color_id": 19,
+      "part_name": "Animal, Dinosaur, Ankylosaurus, Baby with Tan Spikes and Legs, Sand Green Eyes Print",
+      "color_name": "",
+      "image_url": "",
+      "quantity_required": 0,
+      "bricklink_part_num": "67443pb01",
+      "bricklink_color_id": 2,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "68081pr0002",
+      "color_id": 19,
+      "part_name": "Animal, Dinosaur, Triceratops, Baby, Tan Underside, Olive Green Spots Print",
+      "color_name": "",
+      "image_url": "",
+      "quantity_required": 0,
+      "bricklink_part_num": "bb1151c01pb01",
+      "bricklink_color_id": 2,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "87079pb1118",
+      "color_id": 0,
+      "part_name": "",
+      "color_name": "",
+      "image_url": "",
+      "quantity_required": 0,
+      "bricklink_part_num": "87079pb1118",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "87079pb1119",
+      "color_id": 0,
+      "part_name": "",
+      "color_name": "",
+      "image_url": "",
+      "quantity_required": 0,
+      "bricklink_part_num": "87079pb1119",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "88646pb014",
+      "color_id": 0,
+      "part_name": "",
+      "color_name": "",
+      "image_url": "",
+      "quantity_required": 0,
+      "bricklink_part_num": "88646pb014",
+      "bricklink_color_id": 11,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "92280",
+      "color_id": 72,
+      "part_name": "Plate Special 1 x 2, Top Clip [Split]",
+      "color_name": "Dark Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/ldraw/72/92280.png",
+      "quantity_required": 0,
+      "bricklink_part_num": "92280",
+      "bricklink_color_id": 85,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    },
+    {
+      "part_num": "970c19",
+      "color_id": 72,
+      "part_name": "Hips and Reddish Brown Legs",
+      "color_name": "Dark Bluish Gray",
+      "image_url": "https://cdn.rebrickable.com/media/parts/elements/4225787.jpg",
+      "quantity_required": 0,
+      "bricklink_part_num": "970c00",
+      "bricklink_color_id": 85,
+      "quantity_have": 1,
+      "quantity_missing": 0,
+      "quantity_extra": 1,
+      "status": "Not in set",
+      "wanted_list_remark": ""
+    }
+  ]
+}

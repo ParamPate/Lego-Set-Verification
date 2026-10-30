@@ -1,0 +1,8 @@
+# Runtime packages installed by SETUP_WINDOWS.bat.
+# Version ranges allow compatible maintenance updates without jumping to a
+# future major release that could introduce breaking changes.
+requests>=2.31,<3
+Pillow>=10,<13
+customtkinter>=5.2,<6
+openpyxl==3.1.5
+opencv-python>=4.8,<5

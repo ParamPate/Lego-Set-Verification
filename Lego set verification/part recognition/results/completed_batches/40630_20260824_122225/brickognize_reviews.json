@@ -1,0 +1,154 @@
+{
+    "image_007.png": {
+        "Part Review": {
+            "Original Image": "image_007.png",
+            "Original Part ID": "2431",
+            "Original Part Name": "Tile 1 x 4",
+            "Original Part Confidence": "80.25%",
+            "Rescan Image": "lego_06.jpg",
+            "Rescan Part ID": "92593",
+            "Rescan Part Name": "Plate, Modified 1 x 4 with 2 Studs without Groove",
+            "Rescan Part Confidence": "85.16%",
+            "Decision": "Use Rescan Result",
+            "Final Part ID": "92593",
+            "Final Part Name": "Plate, Modified 1 x 4 with 2 Studs without Groove",
+            "Final Part Confidence": "85.16%",
+            "Part Review Completed": "Yes",
+            "Part Approval Status": "Corrected",
+            "Reviewed At": "2026-08-24T12:05:20-04:00"
+        }
+    },
+    "image_017.png": {
+        "Part Review": {
+            "Original Image": "image_017.png",
+            "Original Part ID": "3245c",
+            "Original Part Name": "Brick 1 x 2 x 2 with Inside Stud Holder",
+            "Original Part Confidence": "80.36%",
+            "Rescan Image": "lego_02.jpg",
+            "Rescan Part ID": "22885",
+            "Rescan Part Name": "Brick, Modified 1 x 2 x 1 2/3 with Studs on Side",
+            "Rescan Part Confidence": "84.56%",
+            "Decision": "Use Rescan Result",
+            "Final Part ID": "22885",
+            "Final Part Name": "Brick, Modified 1 x 2 x 1 2/3 with Studs on Side",
+            "Final Part Confidence": "84.56%",
+            "Part Review Completed": "Yes",
+            "Part Approval Status": "Corrected",
+            "Reviewed At": "2026-08-24T11:57:48-04:00"
+        }
+    },
+    "image01_006.png": {
+        "Part Review": {
+            "Original Image": "image01_006.png",
+            "Original Part ID": "3245c",
+            "Original Part Name": "Brick 1 x 2 x 2 with Inside Stud Holder",
+            "Original Part Confidence": "67.10%",
+            "Rescan Image": "lego_03.jpg",
+            "Rescan Part ID": "22885",
+            "Rescan Part Name": "Brick, Modified 1 x 2 x 1 2/3 with Studs on Side",
+            "Rescan Part Confidence": "88.90%",
+            "Decision": "Use Rescan Result",
+            "Final Part ID": "22885",
+            "Final Part Name": "Brick, Modified 1 x 2 x 1 2/3 with Studs on Side",
+            "Final Part Confidence": "88.90%",
+            "Part Review Completed": "Yes",
+            "Part Approval Status": "Corrected",
+            "Reviewed At": "2026-08-24T11:59:49-04:00"
+        }
+    },
+    "image01_015.png": {
+        "Part Review": {
+            "Original Image": "image01_015.png",
+            "Original Part ID": "3710",
+            "Original Part Name": "Plate 1 x 4",
+            "Original Part Confidence": "85.69%",
+            "Rescan Image": "lego_05.jpg",
+            "Rescan Part ID": "2431",
+            "Rescan Part Name": "Tile 1 x 4",
+            "Rescan Part Confidence": "70.17%",
+            "Decision": "Use Rescan Result",
+            "Final Part ID": "2431",
+            "Final Part Name": "Tile 1 x 4",
+            "Final Part Confidence": "70.17%",
+            "Part Review Completed": "Yes",
+            "Part Approval Status": "Corrected",
+            "Reviewed At": "2026-08-24T12:01:29-04:00"
+        }
+    },
+    "image03_002.png": {
+        "Part Review": {
+            "Original Image": "image03_002.png",
+            "Original Part ID": "3245c",
+            "Original Part Name": "Brick 1 x 2 x 2 with Inside Stud Holder",
+            "Original Part Confidence": "61.11%",
+            "Rescan Image": "lego_07.jpg",
+            "Rescan Part ID": "22885",
+            "Rescan Part Name": "Brick, Modified 1 x 2 x 1 2/3 with Studs on Side",
+            "Rescan Part Confidence": "82.76%",
+            "Decision": "Use Rescan Result",
+            "Final Part ID": "22885",
+            "Final Part Name": "Brick, Modified 1 x 2 x 1 2/3 with Studs on Side",
+            "Final Part Confidence": "82.76%",
+            "Part Review Completed": "Yes",
+            "Part Approval Status": "Corrected",
+            "Reviewed At": "2026-08-24T12:05:52-04:00"
+        }
+    },
+    "image03_005.png": {
+        "Part Review": {
+            "Original Image": "image03_005.png",
+            "Original Part ID": "87087",
+            "Original Part Name": "Brick, Modified 1 x 1 with Stud on Side",
+            "Original Part Confidence": "82.69%",
+            "Rescan Image": "lego_08.jpg",
+            "Rescan Part ID": "26604",
+            "Rescan Part Name": "Brick, Modified 1 x 1 with Studs on 2 Sides, Adjacent",
+            "Rescan Part Confidence": "67.27%",
+            "Decision": "Use Rescan Result",
+            "Final Part ID": "26604",
+            "Final Part Name": "Brick, Modified 1 x 1 with Studs on 2 Sides, Adjacent",
+            "Final Part Confidence": "67.27%",
+            "Part Review Completed": "Yes",
+            "Part Approval Status": "Corrected",
+            "Reviewed At": "2026-08-24T12:06:20-04:00"
+        }
+    },
+    "image03_016.png": {
+        "Part Review": {
+            "Original Image": "image03_016.png",
+            "Original Part ID": "3005",
+            "Original Part Name": "Brick 1 x 1",
+            "Original Part Confidence": "77.71%",
+            "Rescan Image": "lego_09.jpg",
+            "Rescan Part ID": "86996",
+            "Rescan Part Name": "Brick, Modified 1 x 1 x 2/3 with Open Stud",
+            "Rescan Part Confidence": "82.50%",
+            "Decision": "Use Rescan Result",
+            "Final Part ID": "86996",
+            "Final Part Name": "Brick, Modified 1 x 1 x 2/3 with Open Stud",
+            "Final Part Confidence": "82.50%",
+            "Part Review Completed": "Yes",
+            "Part Approval Status": "Corrected",
+            "Reviewed At": "2026-08-24T12:07:33-04:00"
+        }
+    },
+    "image04_033.png": {
+        "Part Review": {
+            "Original Image": "image04_033.png",
+            "Original Part ID": "3245c",
+            "Original Part Name": "Brick 1 x 2 x 2 with Inside Stud Holder",
+            "Original Part Confidence": "66.71%",
+            "Rescan Image": "lego_10.jpg",
+            "Rescan Part ID": "22885",
+            "Rescan Part Name": "Brick, Modified 1 x 2 x 1 2/3 with Studs on Side",
+            "Rescan Part Confidence": "82.77%",
+            "Decision": "Use Rescan Result",
+            "Final Part ID": "22885",
+            "Final Part Name": "Brick, Modified 1 x 2 x 1 2/3 with Studs on Side",
+            "Final Part Confidence": "82.77%",
+            "Part Review Completed": "Yes",
+            "Part Approval Status": "Corrected",
+            "Reviewed At": "2026-08-24T12:09:02-04:00"
+        }
+    }
+}
