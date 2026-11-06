@@ -18,6 +18,18 @@ The saved files include their run identifier: `images` contains `image_001.png`,
 
 Only Brickognize-ready crop images are placed in `images*`. The numbered overview, mask, and CSV are stored separately in the matching `analysis*` folder.
 
+For unattended detection, select the original photographs and choose **Analyze
+all photos**. The entire queue uses the current settings and runs without Next
+clicks or per-photo dialogs. A new `batch_*` folder contains `crops/images*`,
+separate `diagnostics/analysis*`, and `batch_results.csv` linking each source
+photo to its output and any error. Bad photos are reported while the rest
+continue. Originals and previous runs are preserved. In recognition, use **Add
+Folders** on the batch's `crops` folder; diagnostics will not be uploaded.
+
+If your folder already contains small individual part crops, such as
+`image analysis/40611/images*`, skip detection and load those crop folders
+directly into recognition instead.
+
 The preview has three box-editing modes. **Select / delete** marks false detections in red, **Draw new box** adds a missing part by click-dragging its boundary, and **Resize selected box** replaces one selected detection with a newly dragged rectangle. The configured crop padding is applied around both automatic and manual boxes when original pixels are saved.
 
 The **Background** selector supports **Auto**, **Dark**, and **White**. Auto examines the photograph and selects the appropriate mask. White mode combines color saturation with local paper contrast so dark, colored, and light pieces can be found despite uneven illumination. **White-bg saturation** and **White-bg contrast** can be adjusted for difficult photographs.

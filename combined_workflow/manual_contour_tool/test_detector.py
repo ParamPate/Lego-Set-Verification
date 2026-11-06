@@ -1,6 +1,9 @@
 import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
+from unittest.mock import Mock, patch
+import csv
 
 import cv2
 import numpy as np
@@ -13,9 +16,47 @@ from detector import (
     next_images_folder,
     next_run_folders,
 )
+import app as contour_app
 
 
 class OutputFolderTests(unittest.TestCase):
+    def test_automatic_batch_saves_all_photos_and_continues_after_bad_image(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            source = np.full((600, 800, 3), 240, dtype=np.uint8)
+            cv2.rectangle(source, (100, 100), (300, 300), (20, 20, 20), -1)
+            paths = [root / "first.png", root / "broken.png", root / "last.png"]
+            cv2.imwrite(str(paths[0]), source)
+            paths[1].write_bytes(b"not an image")
+            cv2.imwrite(str(paths[2]), source)
+            originals = [path.read_bytes() for path in paths]
+            callbacks = []
+            tool = SimpleNamespace(
+                batch_running=False, image_queue=paths, settings=lambda: Settings(),
+                output_parent=Mock(get=lambda: str(root / "outputs")), status=Mock(),
+                batch_button=Mock(), after=lambda delay, callback: callbacks.append(callback),
+                image_path=Mock(), selected=set(), completed_images=set(),
+                queue_selector=Mock(), _queue_labels=lambda: [], queue_position=Mock(),
+                refresh_preview=Mock(),
+            )
+            handoff = root / "last_output.txt"
+            with patch.object(contour_app, "LAST_OUTPUT_FILE", handoff), \
+                    patch.object(contour_app.messagebox, "showerror") as showerror:
+                contour_app.ContourTool.analyze_all_photos(tool)
+                while callbacks:
+                    callbacks.pop(0)()
+                showerror.assert_not_called()
+            self.assertFalse(tool.batch_running)
+            report = next((root / "outputs").glob("batch_*/batch_results.csv"))
+            with report.open(newline="") as handle:
+                rows = list(csv.DictReader(handle))
+            self.assertEqual(len(rows), 3)
+            self.assertTrue(rows[1]["error"])
+            self.assertEqual([rows[i]["pieces"] for i in (0, 2)], ["1", "1"])
+            self.assertEqual(len(list(Path(handoff.read_text()).rglob("*.png"))), 2)
+            self.assertEqual([path.read_bytes() for path in paths], originals)
+            self.assertEqual(tool.completed_images, {paths[0], paths[2]})
+
     def test_numbered_folders_do_not_overwrite(self):
         with tempfile.TemporaryDirectory() as temporary:
             parent = Path(temporary)

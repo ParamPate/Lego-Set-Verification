@@ -3,7 +3,10 @@
 from __future__ import annotations
 
 from pathlib import Path
+import csv
+import shutil
 import sys
+import tempfile
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
@@ -45,6 +48,7 @@ class ContourTool(tk.Tk):
         self.image_queue: list[Path] = []
         self.current_queue_index = -1
         self.completed_images: set[Path] = set()
+        self.batch_running = False
         self.reject_border = tk.BooleanVar(value=True)
         self.background_mode = tk.StringVar(value="Auto")
         self.edit_mode = tk.StringVar(value="select")
@@ -81,6 +85,8 @@ class ContourTool(tk.Tk):
             queue_row, text="Next", command=lambda: self.move_in_queue(1), state="disabled"
         )
         self.next_image_button.pack(side="left")
+        self.batch_button = ttk.Button(queue_row, text="Analyze all photos", command=self.analyze_all_photos)
+        self.batch_button.pack(side="left", padx=(8, 0))
 
         ttk.Label(top, text="Save under:").grid(row=2, column=0, sticky="w", pady=(8, 0))
         ttk.Entry(top, textvariable=self.output_parent).grid(row=2, column=1, sticky="ew", padx=8, pady=(8, 0))
@@ -131,6 +137,8 @@ class ContourTool(tk.Tk):
         ttk.Label(self, textvariable=self.status, padding=14).pack(fill="x")
 
     def choose_image(self) -> None:
+        if self.batch_running:
+            return
         paths = filedialog.askopenfilenames(
             title="Select one or more photographs",
             initialdir=DEFAULT_INPUT_FOLDER,
@@ -148,6 +156,8 @@ class ContourTool(tk.Tk):
 
     def load_image_queue(self, paths: list[Path]) -> None:
         """Replace the working queue and analyze its first photograph."""
+        if self.batch_running:
+            return
         self.image_queue = [path.resolve() for path in paths if path.is_file()]
         self.completed_images.clear()
         if not self.image_queue:
@@ -159,6 +169,8 @@ class ContourTool(tk.Tk):
 
     def load_queue_index(self, index: int, analyze_now: bool = True) -> None:
         """Display one queued photograph and optionally run contour analysis."""
+        if self.batch_running:
+            return
         if not 0 <= index < len(self.image_queue):
             return
         self.current_queue_index = index
@@ -184,6 +196,8 @@ class ContourTool(tk.Tk):
         self.load_queue_index(self.current_queue_index + offset, analyze_now=True)
 
     def choose_output(self) -> None:
+        if self.batch_running:
+            return
         path = filedialog.askdirectory()
         if path:
             self.output_parent.set(path)
@@ -197,6 +211,8 @@ class ContourTool(tk.Tk):
         )
 
     def run_analysis(self) -> None:
+        if self.batch_running:
+            return
         try:
             path = Path(self.image_path.get())
             if not path.is_file():
@@ -326,7 +342,76 @@ class ContourTool(tk.Tk):
         self.refresh_preview()
         self.status.set(f"Removed {removed} false box(es); {len(self.detections)} remain.")
 
+    def analyze_all_photos(self) -> None:
+        """Analyze and save the whole queue without per-photo prompts."""
+        if self.batch_running:
+            return
+        if not self.image_queue:
+            self.status.set("Select photos first, then choose Analyze all photos.")
+            return
+        try:
+            settings = self.settings()
+            parent = Path(self.output_parent.get())
+            parent.mkdir(parents=True, exist_ok=True)
+            batch = Path(tempfile.mkdtemp(prefix="batch_", dir=parent))
+            crops_root = batch / "crops"
+            crops_root.mkdir()
+            diagnostics_root = batch / "diagnostics"
+            diagnostics_root.mkdir()
+        except (ValueError, OSError) as error:
+            messagebox.showerror("Could not start batch", str(error), parent=self)
+            return
+        paths = list(self.image_queue)
+        results = []
+        self.batch_running = True
+        self.batch_button.configure(state="disabled")
+        self.status.set(f"Analyzing {len(paths)} photos automatically...")
+
+        def step(index):
+            path = paths[index]
+            row = {"source": str(path), "pieces": 0, "crops": "", "diagnostics": "", "error": ""}
+            try:
+                image, mask, detections = analyze(path, settings)
+                crops, diagnostics = save_original_crops(image, mask, detections, crops_root, settings.padding)
+                destination = diagnostics_root / diagnostics.name
+                shutil.move(str(diagnostics), destination)
+                row.update(pieces=len(detections), crops=str(crops), diagnostics=str(destination))
+                self.source, self.mask, self.detections = image, mask, detections
+                self.current_queue_index = index
+                self.image_path.set(str(path))
+                self.selected.clear()
+                self.completed_images.add(path)
+                self.queue_selector.configure(values=self._queue_labels())
+                self.queue_selector.current(index)
+                self.queue_position.set(f"Photo {index + 1} of {len(paths)}")
+                self.refresh_preview()
+            except (ValueError, OSError, cv2.error) as error:
+                row["error"] = str(error)
+            results.append(row)
+            self.status.set(f"Analyzed {index + 1}/{len(paths)} photos; {sum(row['pieces'] for row in results)} crops saved.")
+            if index + 1 < len(paths):
+                self.after(1, lambda: step(index + 1))
+                return
+            try:
+                report = batch / "batch_results.csv"
+                with report.open("w", newline="", encoding="utf-8") as handle:
+                    writer = csv.DictWriter(handle, fieldnames=list(row))
+                    writer.writeheader()
+                    writer.writerows(results)
+                LAST_OUTPUT_FILE.write_text(str(crops_root.resolve()), encoding="utf-8")
+                errors = sum(bool(row["error"]) for row in results)
+                self.status.set(f"Batch complete: {len(paths)} photos, {sum(row['pieces'] for row in results)} crops, {errors} errors. Crops: {crops_root}")
+            except OSError as error:
+                self.status.set(f"Crops saved in {crops_root}, but the batch report or handoff could not be saved: {error}")
+            finally:
+                self.batch_running = False
+                self.batch_button.configure(state="normal")
+
+        self.after(1, lambda: step(0))
+
     def save_crops(self, advance: bool = False) -> None:
+        if self.batch_running:
+            return
         if self.source is None or self.detections is None:
             self.run_analysis()
             if self.source is None:

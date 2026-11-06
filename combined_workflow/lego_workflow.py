@@ -214,9 +214,10 @@ class LegoWorkflowApp(tk.Tk):
         ttk.Label(
             self.content,
             text=(
-                "Open the existing SK BrickRescue review app. In that app choose Upload Images, "
-                f"select the image*.png files from {folder_text}, then add any other images* folders "
-                "and process and review the combined batch."
+                "Open the existing SK BrickRescue review app. Choose Add Folders and add "
+                f"{folder_text}, then choose Process All to identify the entire batch automatically. "
+                "For manual single-photo exports, add the other images* folders too. "
+                "Select crop folders only, without diagnostics or original group photographs."
             ),
             wraplength=760,
         ).pack(anchor="w", pady=(0, 18))
