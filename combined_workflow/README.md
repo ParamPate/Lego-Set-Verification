@@ -12,6 +12,11 @@ The workflow keeps the original programs and their data formats intact:
 2. **Part and color review** opens the existing SK BrickRescue app. Use **Upload Images** for each generated `images*` folder. Repeated selections append to the active batch, and the folder identifier in each filename keeps CSV rows unique.
 3. **Set inventory comparison** exports complete Ready part rows from `brickognize_results.csv` into the inventory app's normal import directory under a timestamped name, then opens the existing inventory app. Repeated pieces keep separate rows so inventory quantities remain correct. When unresolved rows exist, the prompt defaults to **No**: count Ready rows only. Explicitly choosing **Yes** includes unapproved predictions with usable identifiers in the handoff copy; the original CSV stays unchanged.
 
+In Step 2, drop a folder of individual part photos onto the recognition banner
+to start analysis immediately. Subfolders are included. Each drop saves a
+separate `recognition_*` batch beside its source folder; Step 3 follows the most
+recent dropped batch using the local `part recognition/last_batch.txt` pointer.
+
 Use **Back** and **Next** in the controller to move between steps. Closing a child app returns you to the controller. The original scripts are not modified.
 
 ## Running on this Mac

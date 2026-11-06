@@ -10,6 +10,17 @@ import lego_workflow
 
 
 class WorkflowHelpersTests(unittest.TestCase):
+    def test_inventory_follows_dropped_folder_without_falling_back_to_older_results(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            target = root / "new batch" / "brickognize_results.csv"
+            with patch.object(lego_workflow, "RECOGNITION_ROOT", root):
+                self.assertEqual(lego_workflow.active_recognition_results(), lego_workflow.RECOGNITION_RESULTS)
+                (root / "last_batch.txt").write_text(str(target))
+                self.assertEqual(lego_workflow.active_recognition_results(), target)
+                (root / "last_batch.txt").write_text("")
+                with self.assertRaises(ValueError):
+                    lego_workflow.active_recognition_results()
 
     def test_recognition_uses_mac_python_and_keeps_windows_environment(self):
         for platform, expected in (("darwin", lego_workflow.sys.executable),

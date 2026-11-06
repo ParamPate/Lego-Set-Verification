@@ -70,6 +70,7 @@ import shutil
 import subprocess
 import sys
 import threading
+import tempfile
 import webbrowser
 from datetime import datetime
 import customtkinter as ctk
@@ -89,6 +90,9 @@ from main import (
     append_result_to_csv,
 )
 from review_policy import apply_review_policy, has_identifiers, needs_attention, review_group
+from folder_batch import folder_images
+import main as recognition_backend
+import review_manager as review_backend
 from excel_report import create_excel_report
 from bricklink_colors import BRICKLINK_REVIEW_COLORS
 from part_color_service import get_part_color_options
@@ -105,6 +109,12 @@ from review_manager import (
 from io import BytesIO
 import requests
 
+try:
+    from tkinterdnd2 import TkinterDnD, DND_FILES
+except ImportError:
+    TkinterDnD = None
+    DND_FILES = None
+
 # ---------------------------------------------------------------------------
 # Project files and visual theme
 # ---------------------------------------------------------------------------
@@ -117,6 +127,7 @@ RESULTS_FOLDER = PROJECT_ROOT / "results"
 API_RESPONSES_FILE = RESULTS_FOLDER / "brickognize_responses.json"
 CAPTURED_IMAGES_FOLDER = RESULTS_FOLDER / "captured_images"
 BATCH_ARCHIVE_FOLDER = RESULTS_FOLDER / "completed_batches"
+LAST_BATCH_FILE = PROJECT_ROOT / "last_batch.txt"
 
 # SK BrickRescue application palette.
 APP_BACKGROUND = "#F3F5F7"
@@ -781,8 +792,14 @@ def open_enlarged_preview(preview_type):
 def display_uploaded_image(image_path):
     """Display one selected image in the uploaded-image preview."""
 
-    with Image.open(image_path) as source_image:
-        selected_image = source_image.copy()
+    try:
+        with Image.open(image_path) as source_image:
+            selected_image = source_image.copy()
+    except (OSError, ValueError):
+        full_preview_images["uploaded"] = None
+        uploaded_image_preview.configure(image="", text="Image could not be opened")
+        uploaded_image_preview.image = None
+        return
 
     full_preview_images["uploaded"] = selected_image.copy()
     selected_image.thumbnail(
@@ -3526,8 +3543,6 @@ def quit_application():
 
 # FUNCTION GUIDE: open_results_folder
 # Purpose: Open the folder containing the saved CSV and JSON files.
-
-
 def open_local_path(path):
     """Open an output using the desktop platform's normal application."""
     if sys.platform == "win32":
@@ -3580,7 +3595,12 @@ def export_excel_report():
         return
 
     try:
-        report_path = create_excel_report()
+        report_path = create_excel_report(
+            RESULTS_FOLDER / f"SK_BrickRescue_Batch_Report_{datetime.now():%Y%m%d_%H%M%S}.xlsx",
+            csv_path=RESULTS_FOLDER / "brickognize_results.csv",
+            reviews_path=RESULTS_FOLDER / "brickognize_reviews.json",
+            api_responses_path=API_RESPONSES_FILE,
+        )
     except (FileNotFoundError, OSError, ValueError) as error:
         print(f"Excel report error: {error}")
         processing_status_label.configure(
@@ -4740,12 +4760,62 @@ def upload_images(image_paths=None):
         )
 
 
+def record_active_batch(csv_path):
+    pointer = LAST_BATCH_FILE.with_suffix(".tmp")
+    pointer.write_text(str(csv_path), encoding="utf-8")
+    pointer.replace(LAST_BATCH_FILE)
 
 
+def analyze_folder(folder):
+    """A dropped folder starts its own batch and recognition immediately."""
+    global RESULTS_FOLDER, API_RESPONSES_FILE, CAPTURED_IMAGES_FOLDER, BATCH_ARCHIVE_FOLDER
+    if process_button.cget("state") == "disabled" or rescan_part_button.cget("text") == "Processing...":
+        processing_status_label.configure(text="Finish the current analysis before dropping another folder.", foreground="#B45309")
+        return False
+    try:
+        images = folder_images(folder)
+        if str(color_save_status_label.cget("text")).startswith("Not saved yet:"):
+            confirm_selected_color()
+            if str(color_save_status_label.cget("text")).startswith("Not saved yet:"):
+                return False
+        if pending_csv_reviews and not update_all_approval_statuses():
+            return False
+        output = Path(tempfile.mkdtemp(prefix="recognition_", dir=Path(folder).expanduser().resolve()))
+        record_active_batch(output / "brickognize_results.csv")
+    except (OSError, ValueError) as error:
+        processing_status_label.configure(text=f"Could not analyze folder: {error}", foreground="#B91C1C")
+        return False
+    _reset_current_batch_workspace()
+    RESULTS_FOLDER = output
+    API_RESPONSES_FILE = output / "brickognize_responses.json"
+    CAPTURED_IMAGES_FOLDER = output / "captured_images"
+    BATCH_ARCHIVE_FOLDER = output / "completed_batches"
+    recognition_backend.RESULTS_FILE = output / "brickognize_results.csv"
+    recognition_backend.API_RESPONSES_FILE = API_RESPONSES_FILE
+    review_backend.CSV_FILE = recognition_backend.RESULTS_FILE
+    review_backend.REVIEW_FILE = output / "brickognize_reviews.json"
+    upload_images([str(path) for path in images])
+    start_batch_processing()
+    return True
 
 
+def on_folder_drop(event):
+    try:
+        paths = window.tk.splitlist(event.data)
+        if len(paths) != 1:
+            raise ValueError("Drop one folder at a time.")
+        return "copy" if analyze_folder(paths[0]) else "refuse_drop"
+    except (tk.TclError, ValueError) as error:
+        processing_status_label.configure(text=str(error), foreground="#B91C1C")
+        return "refuse_drop"
 
 
+def choose_folder_and_analyze():
+    if process_button.cget("state") == "disabled":
+        return
+    folder = filedialog.askdirectory(parent=window, title="Choose a folder to analyze automatically")
+    if folder:
+        analyze_folder(folder)
 
 
 def upload_image_folders():
@@ -4868,6 +4938,12 @@ def start_batch_processing():
             text="Please select one or more images first.",
             foreground="#B45309",
         )
+        return
+
+    try:
+        record_active_batch(RESULTS_FOLDER / "brickognize_results.csv")
+    except OSError as error:
+        processing_status_label.configure(text=f"Could not record the active batch: {error}", foreground="#B91C1C")
         return
 
     process_button.configure(state="disabled")
@@ -5178,6 +5254,13 @@ ctk.set_appearance_mode("light")
 ctk.set_default_color_theme("green")
 
 window = ctk.CTk()
+folder_drop_error = "Install tkinterdnd2>=0.7 to enable folder drop."
+if TkinterDnD is not None and hasattr(TkinterDnD, "require"):
+    try:
+        TkinterDnD.require(window)
+        folder_drop_error = ""
+    except (RuntimeError, tk.TclError) as error:
+        folder_drop_error = str(error)
 window.configure(fg_color=APP_BACKGROUND)
 window.title("SK BrickRescue Part Recognition")
 
@@ -6662,14 +6745,28 @@ def build_gallery_interface():
     gallery_root.pack(fill="both", expand=True)
     gallery_root.columnconfigure(0, weight=7)
     gallery_root.columnconfigure(1, weight=3)
-    gallery_root.rowconfigure(0, weight=1)
+    gallery_root.rowconfigure(1, weight=1)
+    drop_area = ttk.Label(
+        gallery_root,
+        text=("Drop a folder of part photos here — analysis starts automatically\n"
+              "Includes subfolders · JPG / JPEG / PNG · Images are sent to api.brickognize.com"),
+        anchor="center", padding=14, relief="groove",
+    )
+    drop_area.grid(row=0, column=0, columnspan=2, sticky="ew", pady=(0, 10))
+    if not folder_drop_error:
+        for target in (gallery_root, drop_area):
+            target.drop_target_register(DND_FILES)
+            target.dnd_bind("<<DropEnter>>", lambda event: "copy")
+            target.dnd_bind("<<Drop>>", on_folder_drop)
+    else:
+        drop_area.configure(text="Folder drop unavailable. Use Choose folder & analyze.\n" + folder_drop_error)
 
     left = ttk.LabelFrame(
         gallery_root,
         text="Scanned image and identified reference",
         padding=6,
     )
-    left.grid(row=0, column=0, sticky="nsew", padx=(0, 7))
+    left.grid(row=1, column=0, sticky="nsew", padx=(0, 7))
     left.rowconfigure(1, weight=1)
     left.columnconfigure(0, weight=1)
 
@@ -6708,7 +6805,7 @@ def build_gallery_interface():
     )
 
     right = ttk.Frame(gallery_root, padding=(7, 0, 0, 0))
-    right.grid(row=0, column=1, sticky="nsew")
+    right.grid(row=1, column=1, sticky="nsew")
     right.columnconfigure(0, weight=1)
     right.columnconfigure(1, weight=1)
 
@@ -6722,7 +6819,7 @@ def build_gallery_interface():
         return button
 
     action_button(1, 0, "Select Images", upload_images)
-    action_button(1, 1, "Add Folders", upload_image_folders)
+    action_button(1, 1, "Choose folder & analyze", choose_folder_and_analyze)
     action_button(2, 0, "Process All", start_batch_processing)
     action_button(2, 1, "Save Statuses", update_all_approval_statuses)
     action_button(3, 0, "Previous", lambda: gallery_action(lambda: move_review_selection(-1)))

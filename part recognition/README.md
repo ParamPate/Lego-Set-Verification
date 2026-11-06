@@ -70,7 +70,7 @@ Open PowerShell in the extracted project folder and run:
 py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install --upgrade pip
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe src\gui.py
+.\.venv\Scripts\python.exe gallery_interface\gallery_gui.py
 ```
 
 For later launches, only the final command is required. The application can
@@ -128,7 +128,7 @@ to run the wrong batch:
 4. Use `START_APPLICATION.bat` for normal operation. Do not double-click an
    individual `.py` file unless intentionally developing or troubleshooting.
 5. Do not open `src/main.py` to launch the desktop interface. It is the backend;
-   the interface entry point is `src/gui.py`.
+   the interface entry point is `gallery_interface/gallery_gui.py`.
 6. Wait for processing to finish before exporting Excel, starting another
    batch, closing the application, or changing files in `results/`.
 7. A faded spreadsheet icon is intentionally disabled. Do not treat it as an

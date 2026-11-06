@@ -9,5 +9,5 @@ if not exist ".venv\Scripts\pythonw.exe" (
     exit /b 1
 )
 
-start "SK BrickRescue Part Recognition" ".venv\Scripts\pythonw.exe" "src\gui.py"
+start "SK BrickRescue Part Recognition" ".venv\Scripts\pythonw.exe" "gallery_interface\gallery_gui.py"
 exit /b 0

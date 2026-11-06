@@ -43,6 +43,15 @@ def segmented_folder_for(image_path: Path) -> Path:
     return image_path.with_name(f"{image_path.stem}_separated_parts")
 
 
+def active_recognition_results():
+    """Follow a dropped folder's isolated results rather than a different batch."""
+    pointer = RECOGNITION_ROOT / "last_batch.txt"
+    if pointer.exists():
+        value = pointer.read_text(encoding="utf-8").strip()
+        if not value:
+            raise ValueError("The recognition batch pointer is empty. Drop the folder again.")
+        return Path(value)
+    return RECOGNITION_RESULTS
 
 
 def count_unapproved_rows(source: Path = RECOGNITION_RESULTS) -> int:
@@ -281,7 +290,8 @@ class LegoWorkflowApp(tk.Tk):
             messagebox.showinfo("Program running", "Finish and close the current step before preparing inventory.", parent=self)
             return
         try:
-            unapproved_count = count_unapproved_rows()
+            source = active_recognition_results()
+            unapproved_count = count_unapproved_rows(source)
         except (OSError, ValueError, csv.Error) as error:
             messagebox.showerror("Could not prepare inventory", str(error), parent=self)
             return
@@ -300,7 +310,7 @@ class LegoWorkflowApp(tk.Tk):
                 default="no",
             )
         try:
-            copied = transfer_reviewed_csv(include_unapproved=include_unapproved)
+            copied = transfer_reviewed_csv(source, include_unapproved=include_unapproved)
         except (OSError, ValueError, csv.Error) as error:
             messagebox.showerror("Could not prepare inventory", str(error), parent=self)
             return

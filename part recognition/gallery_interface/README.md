@@ -12,6 +12,29 @@ The pre-gallery interface remains available at:
 
 `../src/gui_classic_backup_20260831.py`
 
+## Drop a folder and analyze
+
+Drop one folder onto the banner at the top of the recognition window. Recognition
+starts automatically for JPG, JPEG, and PNG part photos, including subfolders.
+**Choose folder & analyze** does the same thing without drag and drop. No Process
+All or Next click is needed. These inputs should contain one cropped part per
+photo; use Step 1's **Analyze all photos** first for photographs of many pieces.
+
+The banner states that recognition uploads the selected photos to
+`api.brickognize.com`. Each drop creates a fresh `recognition_*` folder beside
+the source photos, preserving previous results and preventing reused filenames
+from another set from supplying the wrong predictions. Generated recognition
+outputs and detection diagnostics are excluded from source discovery. Duplicate
+photo filenames inside different subfolders must be renamed before analysis.
+
+**Results Folder**, reviews, and Excel export follow the dropped batch. The
+combined launcher's inventory handoff follows it too. A new drop is refused while
+recognition or a rescan is running; failed pending saves also block switching.
+
+Native folder drop uses `tkinterdnd2`. It is installed in this Mac's `.venv-mac`;
+on another computer, install the updated requirements or rerun Windows setup.
+If the native component cannot load, the folder picker remains available.
+
 ## Faster review
 
 After upload or recognition, **Needs attention** shows uncertain predictions,
