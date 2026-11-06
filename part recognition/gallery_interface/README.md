@@ -44,6 +44,8 @@ Part and color thresholds remain separate at 80%. RGB fallback colors always
 need human review. A missing part or color identifier cannot become Ready.
 
 Rows are grouped by their displayed part and color, including saved corrections.
+The searchable color chooser shows a catalog RGB swatch beside each color name.
+Swatches are approximate screen references; unavailable colors display `?`.
 Check **Include in group approval** on matching thumbnails, then choose
 **Approve selected**. **Select this page** checks eligible pieces on the current
 ten-image page; uncheck odd pieces before approval. Every image keeps its own

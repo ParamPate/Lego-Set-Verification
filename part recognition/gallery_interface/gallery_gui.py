@@ -94,7 +94,7 @@ from folder_batch import folder_images
 import main as recognition_backend
 import review_manager as review_backend
 from excel_report import create_excel_report
-from bricklink_colors import BRICKLINK_REVIEW_COLORS
+from bricklink_colors import BRICKLINK_REVIEW_COLORS, BRICKLINK_COLOR_RGB
 from part_color_service import get_part_color_options
 from review_manager import (
     approve_reviewed_result,
@@ -3243,21 +3243,20 @@ def show_color_choices():
     list_frame.pack(fill="both", expand=True, padx=16, pady=(0, 10))
     list_frame.rowconfigure(0, weight=1)
     list_frame.columnconfigure(0, weight=1)
-    color_listbox = tk.Listbox(
-        list_frame,
-        font=("Segoe UI", 11),
-        exportselection=False,
-        activestyle="none",
-    )
+    color_list = ttk.Treeview(list_frame, show="tree", selectmode="browse")
+    color_list.column("#0", width=300, stretch=True)
+    swatch_images = {}
+    displayed_options = None
     color_scrollbar = ttk.Scrollbar(
-        list_frame, orient="vertical", command=color_listbox.yview
+        list_frame, orient="vertical", command=color_list.yview
     )
-    color_listbox.configure(yscrollcommand=color_scrollbar.set)
-    color_listbox.grid(row=0, column=0, sticky="nsew")
+    color_list.configure(yscrollcommand=color_scrollbar.set)
+    color_list.grid(row=0, column=0, sticky="nsew")
     color_scrollbar.grid(row=0, column=1, sticky="ns")
-    displayed_names = []
+    ttk.Label(chooser, text="Screen swatches are approximate; ? means unavailable.").pack(pady=(0, 6))
 
     def refresh_color_list(*_args):
+        nonlocal displayed_options
         if not chooser.winfo_exists():
             return
         options = dict(color_options_by_image.get(image_name) or {})
@@ -3271,28 +3270,38 @@ def show_color_choices():
             options[current_color] = current_id
         query = search_value.get().strip().casefold()
         names = [name for name in sorted(options) if query in name.casefold()]
-        previous = color_listbox.get(color_listbox.curselection()[0]) if color_listbox.curselection() else current_color
-        color_listbox.delete(0, tk.END)
-        displayed_names.clear()
-        displayed_names.extend(names)
-        for name in names:
-            color_listbox.insert(tk.END, name)
-        if previous in names:
-            index = names.index(previous)
-            color_listbox.selection_set(index)
-            color_listbox.see(index)
-        elif names:
-            color_listbox.selection_set(0)
         loading = any(key[0] == image_name for key in color_option_requests)
         color_list_status.set(
             f"{len(names)} color(s){' — full list is still loading' if loading else ''}"
         )
+        signature = tuple((name, options[name]) for name in names)
+        if signature == displayed_options:
+            return
+        displayed_options = signature
+        previous = color_list.selection()[0] if color_list.selection() else current_color
+        color_list.delete(*color_list.get_children())
+        for name in names:
+            color_id = str(options[name])
+            if color_id not in swatch_images:
+                swatch = Image.new("RGB", (28, 18), "#FFFFFF")
+                draw = ImageDraw.Draw(swatch)
+                rgb = BRICKLINK_COLOR_RGB.get(color_id)
+                draw.rectangle((1, 1, 26, 16), fill=rgb or "#FFFFFF", outline="#777777")
+                if rgb is None:
+                    draw.text((10, 1), "?", fill="#333333")
+                swatch_images[color_id] = ImageTk.PhotoImage(swatch, master=chooser)
+            color_list.insert("", tk.END, iid=name, text="  " + name, image=swatch_images[color_id])
+        selected = previous if previous in names else names[0] if names else None
+        if selected:
+            color_list.selection_set(selected)
+            color_list.focus(selected)
+            color_list.see(selected)
 
     def use_selected_color(_event=None):
-        selection = color_listbox.curselection()
+        selection = color_list.selection()
         if not selection:
             return
-        selected_color = displayed_names[selection[0]]
+        selected_color = selection[0]
         options = dict(color_options_by_image.get(image_name) or {})
         color_review_dropdown.configure(values=sorted(options))
         color_review_dropdown.set(selected_color)
@@ -3309,7 +3318,8 @@ def show_color_choices():
         chooser.after(300, poll_colors)
 
     search_value.trace_add("write", refresh_color_list)
-    color_listbox.bind("<Double-Button-1>", use_selected_color)
+    color_list.bind("<Double-Button-1>", use_selected_color)
+    color_list.bind("<Return>", use_selected_color)
     button_row = ttk.Frame(chooser)
     button_row.pack(fill="x", padx=16, pady=(0, 16))
     ttk.Button(button_row, text="Use Selected Color", command=use_selected_color).pack(side="right")
