@@ -8,7 +8,6 @@ the reviewed Brickognize CSV to the inventory application's import folder.
 from __future__ import annotations
 
 import csv
-import shutil
 import subprocess
 import sys
 from datetime import datetime
@@ -44,6 +43,8 @@ def segmented_folder_for(image_path: Path) -> Path:
     return image_path.with_name(f"{image_path.stem}_separated_parts")
 
 
+
+
 def count_unapproved_rows(source: Path = RECOGNITION_RESULTS) -> int:
     """Count recognition rows that have not been marked Ready."""
     if not source.is_file() or source.stat().st_size == 0:
@@ -51,7 +52,7 @@ def count_unapproved_rows(source: Path = RECOGNITION_RESULTS) -> int:
     with source.open("r", newline="", encoding="utf-8-sig") as handle:
         reader = csv.DictReader(handle)
         if "Final Review Status" not in (reader.fieldnames or []):
-            return 0
+            raise ValueError("Recognition CSV has no Final Review Status column. Save review statuses first.")
         return sum(
             1
             for row in reader
@@ -62,7 +63,7 @@ def count_unapproved_rows(source: Path = RECOGNITION_RESULTS) -> int:
 def transfer_reviewed_csv(
     source: Path = RECOGNITION_RESULTS, include_unapproved: bool = False
 ) -> Path | None:
-    """Copy results without overwriting imports, optionally counting warnings."""
+    """Export eligible rows, preserving one row per piece and the source file."""
     if not source.is_file() or source.stat().st_size == 0:
         return None
     INVENTORY_IMPORTS.mkdir(parents=True, exist_ok=True)
@@ -72,23 +73,29 @@ def transfer_reviewed_csv(
     while destination.exists():
         destination = INVENTORY_IMPORTS / f"brickognize_results_{stamp}_{counter}.csv"
         counter += 1
-    if not include_unapproved:
-        shutil.copy2(source, destination)
-        return destination
-
-    # The inventory importer counts only rows marked Ready. Change that status
-    # in the timestamped handoff copy, while preserving the recognition app's
-    # original CSV and all predicted/corrected part and color values.
-    with source.open("r", newline="", encoding="utf-8-sig") as source_handle:
-        reader = csv.DictReader(source_handle)
-        fieldnames = reader.fieldnames or []
-        with destination.open("w", newline="", encoding="utf-8-sig") as destination_handle:
-            writer = csv.DictWriter(destination_handle, fieldnames=fieldnames)
-            writer.writeheader()
-            for row in reader:
-                if (row.get("Final Review Status") or "").strip().casefold() != "ready":
-                    row["Final Review Status"] = "Ready"
-                writer.writerow(row)
+    try:
+        with source.open("r", newline="", encoding="utf-8-sig") as source_handle:
+            reader = csv.DictReader(source_handle)
+            fieldnames = reader.fieldnames or []
+            required = {"Final Review Status", "Final Part ID", "Final BrickLink Color ID"}
+            if not required <= set(fieldnames):
+                raise ValueError("Recognition CSV is missing final review columns. Save review statuses first.")
+            with destination.open("w", newline="", encoding="utf-8-sig") as destination_handle:
+                writer = csv.DictWriter(destination_handle, fieldnames=fieldnames)
+                writer.writeheader()
+                for row in reader:
+                    ready = (row.get("Final Review Status") or "").strip().casefold() == "ready"
+                    identifiers = all((row.get(name) or "").strip().casefold() not in {"", "unknown", "n/a", "none", "-"}
+                                      for name in ("Final Part ID", "Final BrickLink Color ID"))
+                    identifiers = identifiers and (row.get("Final BrickLink Color ID") or "").strip().isdecimal()
+                    part = (row.get("Type") or "").strip().casefold() in {"", "part"}
+                    if identifiers and part and (ready or include_unapproved):
+                        if not ready:
+                            row["Final Review Status"] = "Ready"
+                        writer.writerow(row)
+    except (OSError, ValueError, csv.Error):
+        destination.unlink(missing_ok=True)
+        raise
     return destination
 
 
@@ -264,11 +271,19 @@ class LegoWorkflowApp(tk.Tk):
         self._start_process(command, SEGMENT_SCRIPT.parent, "Image analysis")
 
     def launch_recognition(self) -> None:
-        python = RECOGNITION_PYTHON if RECOGNITION_PYTHON.is_file() else Path(sys.executable)
+        python = (RECOGNITION_PYTHON if sys.platform == "win32" and RECOGNITION_PYTHON.is_file()
+                  else Path(sys.executable))
         self._start_process([str(python), str(RECOGNITION_SCRIPT)], RECOGNITION_SCRIPT.parent, "Part/color review")
 
     def launch_inventory(self) -> None:
-        unapproved_count = count_unapproved_rows()
+        if self._process_running():
+            messagebox.showinfo("Program running", "Finish and close the current step before preparing inventory.", parent=self)
+            return
+        try:
+            unapproved_count = count_unapproved_rows()
+        except (OSError, ValueError, csv.Error) as error:
+            messagebox.showerror("Could not prepare inventory", str(error), parent=self)
+            return
         include_unapproved = False
         if unapproved_count:
             include_unapproved = messagebox.askyesno(
@@ -278,11 +293,16 @@ class LegoWorkflowApp(tk.Tk):
                     f"{'y' if unapproved_count == 1 else 'ies'} with review warnings.\n\n"
                     "Should their predicted part and color values be counted in the "
                     "inventory comparison?\n\n"
-                    "Choose No to count only entries marked Ready."
+                    "Choose No (the default) to count only entries marked Ready."
                 ),
                 parent=self,
+                default="no",
             )
-        copied = transfer_reviewed_csv(include_unapproved=include_unapproved)
+        try:
+            copied = transfer_reviewed_csv(include_unapproved=include_unapproved)
+        except (OSError, ValueError, csv.Error) as error:
+            messagebox.showerror("Could not prepare inventory", str(error), parent=self)
+            return
         if copied is None:
             proceed = messagebox.askyesno(
                 "No reviewed CSV found",

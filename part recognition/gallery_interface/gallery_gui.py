@@ -67,6 +67,7 @@ import os
 import queue
 import re
 import shutil
+import subprocess
 import sys
 import threading
 import webbrowser
@@ -87,10 +88,12 @@ from main import (
     identify_part,
     append_result_to_csv,
 )
+from review_policy import apply_review_policy, has_identifiers, needs_attention, review_group
 from excel_report import create_excel_report
 from bricklink_colors import BRICKLINK_REVIEW_COLORS
 from part_color_service import get_part_color_options
 from review_manager import (
+    approve_reviewed_result,
     clear_color_review,
     load_color_review,
     load_part_review,
@@ -333,6 +336,7 @@ visible_image_paths = []
 
 # Stores each processed result using its image path as the key.
 processed_results = {}
+failed_image_paths = set()
 
 # Review decisions update the displayed result immediately, but their final
 # CSV columns are written together when the operator chooses Update All
@@ -417,6 +421,8 @@ color_option_queue = queue.Queue()
 # Catalog image downloads must never block list selection or navigation.
 reference_image_queue = queue.Queue()
 reference_image_cache = {}
+reference_image_loading = set()
+reference_image_failures = set()
 
 # Stores the limited, part-specific color choices for each image.
 color_options_by_image = {}
@@ -506,6 +512,7 @@ def get_recorded_csv_results():
                     ("Final Part Name", "Part Name"),
                     ("Final Part Confidence", "Part Confidence"),
                     ("Final LEGO Color", "LEGO Color"),
+                    ("Final BrickLink Color ID", "Confirmed BrickLink Color ID"),
                     ("Final BrickLink URL", "BrickLink URL"),
                 ]
 
@@ -520,7 +527,7 @@ def get_recorded_csv_results():
                 if row.get("Color Review Completed") == "Yes":
                     restored_result["Color Review Required"] = "No"
 
-                saved_results[image_name] = restored_result
+                saved_results[image_name] = apply_review_policy(restored_result)
 
             return saved_results
 
@@ -537,6 +544,8 @@ def get_image_row_state(image_path):
     result = processed_results.get(normalized_path)
 
     if result:
+        if needs_attention(result):
+            return "review"
         if (
             result.get("Part Review Completed") == "Yes"
             and result.get("Color Review Completed") == "Yes"
@@ -548,6 +557,9 @@ def get_image_row_state(image_path):
         ):
             return "review"
         return "recorded"
+
+    if normalized_path in failed_image_paths:
+        return "failed"
 
     if Path(image_path).name in get_recorded_csv_images():
         return "recorded"
@@ -798,7 +810,6 @@ def display_reference_image(result):
     """Load the matching BrickLink image without blocking navigation."""
 
     reference_url = result.get("Reference Image URL", "")
-    image_name = result.get("Image", "")
 
     if not reference_url:
         full_preview_images["reference"] = None
@@ -813,9 +824,25 @@ def display_reference_image(result):
         _show_reference_pil(reference_image_cache[reference_url])
         return
 
+    if reference_url in reference_image_failures:
+        full_preview_images["reference"] = None
+        reference_image_preview.configure(image="", text="Catalog reference image unavailable")
+        reference_image_preview.image = None
+        return
+
     full_preview_images["reference"] = None
     reference_image_preview.configure(image="", text="Loading catalog reference…")
     reference_image_preview.image = None
+
+    request_reference_image(reference_url)
+
+
+def request_reference_image(reference_url):
+    """Share downloads between the selected preview, gallery, and prefetch."""
+    if (not reference_url or reference_url in reference_image_cache
+            or reference_url in reference_image_loading or reference_url in reference_image_failures):
+        return
+    reference_image_loading.add(reference_url)
 
     def download():
         try:
@@ -831,9 +858,9 @@ def display_reference_image(result):
             response.raise_for_status()
             with Image.open(BytesIO(response.content)) as source_image:
                 downloaded = source_image.copy()
-            reference_image_queue.put((image_name, reference_url, downloaded, None))
+            reference_image_queue.put((reference_url, downloaded, None))
         except (requests.RequestException, ValueError, OSError) as error:
-            reference_image_queue.put((image_name, reference_url, None, error))
+            reference_image_queue.put((reference_url, None, error))
 
     threading.Thread(target=download, daemon=True).start()
 
@@ -852,15 +879,18 @@ def check_reference_image_queue():
     """Apply completed reference downloads only to the still-selected row."""
     try:
         while True:
-            image_name, reference_url, downloaded, error = reference_image_queue.get_nowait()
+            reference_url, downloaded, error = reference_image_queue.get_nowait()
+            reference_image_loading.discard(reference_url)
             if downloaded is not None:
                 reference_image_cache[reference_url] = downloaded
+            else:
+                reference_image_failures.add(reference_url)
             selected = image_listbox.curselection()
             if not selected:
                 continue
             current_path = str(Path(visible_image_paths[selected[0]]))
             current = processed_results.get(current_path, {})
-            if current.get("Image") != image_name or current.get("Reference Image URL") != reference_url:
+            if current.get("Reference Image URL") != reference_url:
                 continue
             if downloaded is not None:
                 _show_reference_pil(downloaded)
@@ -2702,8 +2732,9 @@ def _reset_current_batch_workspace():
     # files remain active or were archived before reaching this function.
     selected_image_paths.clear()
     visible_image_paths.clear()
-    image_filter_dropdown.set("All Images")
+    image_filter_dropdown.set("Needs attention")
     processed_results.clear()
+    failed_image_paths.clear()
     pending_rescan_images.clear()
     completed_rescans.clear()
     color_options_by_image.clear()
@@ -2792,6 +2823,8 @@ def clear_current_batch():
     if not should_clear:
         return
 
+    if pending_csv_reviews and not update_all_approval_statuses():
+        return
     _reset_current_batch_workspace()
 
 
@@ -2822,9 +2855,11 @@ def complete_current_batch():
         )
         return
 
+    unresolved = sum(needs_attention(processed_results.get(str(Path(path)))) for path in selected_image_paths)
     should_complete = messagebox.askyesno(
         "Complete Batch",
         (
+            f"Unresolved pieces: {unresolved}. Only Ready rows count in inventory.\n\n"
             "Save all pending verification changes and finish this review batch?\n\n"
             "The saved CSV and review history will remain available for Step 3. "
             "The Step 2 workspace will be cleared for the next batch."
@@ -2849,6 +2884,8 @@ def complete_current_batch():
             )
             return
 
+    for result in processed_results.values():
+        queue_csv_review(result)
     if pending_csv_reviews and not update_all_approval_statuses():
         return
 
@@ -2981,6 +3018,8 @@ def start_new_batch():
 
     if batch_action is None:
         return
+    if pending_csv_reviews and not update_all_approval_statuses():
+        return
 
     # These choices intentionally have different persistence behavior. Clear
     # keeps the dataset; archive creates a hard boundary between LEGO sets.
@@ -3111,82 +3150,38 @@ def move_review_selection(offset):
 
 
 def approve_current_and_next():
-    """Approve the displayed part and color, queue the CSV update, and advance."""
+    """Approve the selected identity, then rebuild the filter before advancing."""
+    if process_button.cget("state") == "disabled":
+        return
     selected = image_listbox.curselection()
-    if not selected:
+    if not selected or selected[0] >= len(visible_image_paths):
         return
     index = selected[0]
     path = str(Path(visible_image_paths[index]))
     result = processed_results.get(path)
     if not result:
-        processing_status_label.configure(text="Process this image before approving it.", foreground="#B45309")
+        processing_status_label.configure(text="Process or rescan this piece before approving it.", foreground="#B45309")
         return
-
-    # The color chooser used to behave as a preview-only control. That made it
-    # easy to choose a corrected color and then press Approve & Next without
-    # ever committing the choice. Treat the color visible in the chooser as
-    # the employee's decision when approving the row.
-    image_name = result.get("Image", Path(path).name)
-    color_status = str(color_save_status_label.cget("text"))
-    if color_status.startswith("Not saved yet:"):
-        selected_color = color_review_dropdown.get().strip()
-    else:
-        # Programmatic dropdown updates caused by navigation or a delayed
-        # network response are not employee color decisions.
-        selected_color = str(result.get("LEGO Color", "")).strip()
-    color_options = color_options_by_image.get(image_name, BRICKLINK_REVIEW_COLORS)
-    selected_color_id = color_options.get(selected_color)
-    if selected_color and selected_color_id:
-        try:
-            review_record = save_color_review(
-                result,
-                selected_color,
-                selected_color_id,
-            )
-        except OSError as error:
-            print(f"Color review save error: {error}")
-            processing_status_label.configure(
-                text="The selected color could not be saved. This image was not approved.",
-                foreground="#B91C1C",
-            )
-            return
-
-        result["Original LEGO Color"] = review_record["Original Color"]
-        result["Confirmed LEGO Color"] = selected_color
-        result["Confirmed BrickLink Color ID"] = selected_color_id
-        result["LEGO Color"] = selected_color
-        result["Color Approval Status"] = review_record.get(
-            "Color Approval Status", "Confirmed"
-        )
-
-        part_id = result.get("Part ID", "")
-        if part_id:
-            result["Reference Image URL"] = (
-                "https://img.bricklink.com/ItemImage/PN/"
-                f"{selected_color_id}/{part_id}.png"
-            )
-        bricklink_url = result.get("BrickLink URL", "")
-        if bricklink_url and bricklink_url != "N/A":
-            result["BrickLink URL"] = (
-                bricklink_url.split("&idColor=")[0]
-                + f"&idColor={selected_color_id}"
-            )
-
-    result["Part Review Required"] = "No"
-    result["Color Review Required"] = "No"
-    result["Part Review Completed"] = "Yes"
-    result["Color Review Completed"] = "Yes"
-    result["Part Approval Status"] = "Confirmed"
-    if not selected_color_id:
-        result["Color Approval Status"] = "Confirmed"
-    queue_csv_review(result)
-    set_image_list_row(index, visible_image_paths[index])
-    image_listbox.selection_set(index)
+    candidate = dict(result)
+    if str(color_save_status_label.cget("text")).startswith("Not saved yet:"):
+        color = color_review_dropdown.get().strip()
+        options = color_options_by_image.get(result["Image"], BRICKLINK_REVIEW_COLORS)
+        candidate["LEGO Color"] = color
+        candidate["Confirmed LEGO Color"] = color
+        candidate["Confirmed BrickLink Color ID"] = options.get(color, "")
+    try:
+        approved = approve_reviewed_result(candidate)
+    except (OSError, ValueError) as error:
+        processing_status_label.configure(text=f"Piece was not approved: {error}", foreground="#B91C1C")
+        return
+    processed_results[path] = approved
+    queue_csv_review(approved)
     update_batch_summary()
-    if index + 1 < len(visible_image_paths):
-        select_review_index(index + 1)
-    else:
-        processing_status_label.configure(text="Last image approved. Use Update All Statuses to save the batch.", foreground="#15803D")
+    apply_image_filter()
+    if visible_image_paths:
+        # Under Needs attention the old row disappeared; its successor has its index.
+        next_index = index + 1 if path in [str(Path(p)) for p in visible_image_paths] else index
+        select_review_index(min(next_index, len(visible_image_paths) - 1))
 
 
 def show_color_choices():
@@ -3531,6 +3526,16 @@ def quit_application():
 
 # FUNCTION GUIDE: open_results_folder
 # Purpose: Open the folder containing the saved CSV and JSON files.
+
+
+def open_local_path(path):
+    """Open an output using the desktop platform's normal application."""
+    if sys.platform == "win32":
+        os.startfile(path)
+    else:
+        subprocess.Popen(["open" if sys.platform == "darwin" else "xdg-open", str(path)])
+
+
 def open_results_folder():
     """Open the folder containing the saved CSV and JSON files."""
 
@@ -3540,7 +3545,7 @@ def open_results_folder():
     )
 
     try:
-        os.startfile(RESULTS_FOLDER)
+        open_local_path(RESULTS_FOLDER)
 
     except OSError as error:
         print(f"Could not open the results folder: {error}")
@@ -3591,7 +3596,7 @@ def export_excel_report():
     show_save_confirmation(f"Excel report {report_path.name}")
 
     try:
-        os.startfile(report_path)
+        open_local_path(report_path)
     except OSError:
         # The report is still successfully saved even if Windows cannot
         # open it automatically.
@@ -4470,25 +4475,14 @@ def apply_image_filter(selected_filter=None):
         normalized_path = str(Path(image_path))
         result = processed_results.get(normalized_path)
 
-        part_review_required = False
-        color_review_required = False
-        is_processed = result is not None
-
-        if result:
-            part_review_required = (
-                result.get("Part Review Required") == "Yes"
-            )
-            color_review_required = (
-                result.get("Color Review Required") == "Yes"
-            )
-
-        needs_review = (
-            part_review_required
-            or color_review_required
-        )
+        needs_review = needs_attention(result)
+        part_review_required = bool(result) and result.get("Part Review Required") == "Yes"
+        color_review_required = bool(result) and result.get("Color Review Required") == "Yes"
+        is_processed = bool(result)
 
         should_display = (
             selected_filter == "All Images"
+            or (selected_filter == "Needs attention" and needs_review)
             or (
                 selected_filter == "Suggested Checks"
                 and needs_review
@@ -4512,12 +4506,11 @@ def apply_image_filter(selected_filter=None):
             continue
 
         visible_image_paths.append(image_path)
-        image_name = Path(image_path).name
 
-        set_image_list_row(
-            image_listbox.size(),
-            image_path,
-        )
+    if process_button.cget("state") != "disabled":
+        visible_image_paths.sort(key=lambda path: review_group(processed_results.get(str(Path(path)))))
+    for image_path in visible_image_paths:
+        set_image_list_row(image_listbox.size(), image_path)
 
     if visible_image_paths:
         restored_index = 0
@@ -4533,6 +4526,7 @@ def apply_image_filter(selected_filter=None):
         image_listbox.see(restored_index)
         show_selected_image()
     else:
+        color_save_status_label.configure(text="No piece selected")
         processing_status_label.configure(
             text=f"No images match: {selected_filter}.",
             foreground="#66727D",
@@ -4563,6 +4557,7 @@ def update_batch_summary():
         if not result:
             continue
 
+        apply_review_policy(result)
         part_review_required = (
             result.get("Part Review Required") == "Yes"
         )
@@ -4589,7 +4584,7 @@ def update_batch_summary():
         text=f"Newly Processed\n{newly_processed_count}",
     )
     ready_summary_label.configure(
-        text=f"Ready\n{ready_count}",
+        text=f"Ready: {ready_count}\nUnresolved: {selected_count - ready_count}",
     )
     part_review_summary_label.configure(
         text=f"Part Check\n{part_review_count}",
@@ -4662,6 +4657,7 @@ def upload_images(image_paths=None):
             apply_saved_part_review(saved_result)
             apply_saved_color_review(saved_result)
             processed_results[normalized_path] = saved_result
+            queue_csv_review(saved_result)
             previously_saved_paths.add(normalized_path)
 
     # Refresh the filename list.
@@ -4696,6 +4692,9 @@ def upload_images(image_paths=None):
     image_listbox.activate(first_added_index)
     image_listbox.see(first_added_index)
     show_selected_image()
+
+    image_filter_dropdown.set("Needs attention")
+    apply_image_filter()
 
     # show_selected_image() normally reports the selected row's state.
     # Replace that message here so an existing CSV record cannot be missed.
@@ -4739,6 +4738,14 @@ def upload_images(image_paths=None):
             f"{displayed_names}",
             parent=window,
         )
+
+
+
+
+
+
+
+
 
 
 def upload_image_folders():
@@ -4852,6 +4859,8 @@ def upload_image_folders():
 def start_batch_processing():
     """Prepare the interface and start background processing."""
 
+    if process_button.cget("state") == "disabled":
+        return
     duplicate_part_warnings.clear()
 
     if not selected_image_paths:
@@ -4861,6 +4870,7 @@ def start_batch_processing():
         )
         return
 
+    process_button.configure(state="disabled")
     # Processing updates use the full list's row numbers.
     image_filter_dropdown.set("All Images")
     apply_image_filter("All Images")
@@ -4886,6 +4896,8 @@ def start_batch_processing():
         folder_upload_button.configure(state="normal")
         process_button.configure(state="normal")
         update_excel_export_state()
+        image_filter_dropdown.set("Needs attention")
+        apply_image_filter()
         processing_status_label.configure(
             text="Every image in the current batch is already processed.",
             foreground="#15803D",
@@ -5026,6 +5038,8 @@ def check_processing_queue():
 
             elif message_type == "failed":
                 _, row_index, progress_value, image_name = message
+                failed_image_paths.add(str(Path(selected_image_paths[row_index])))
+                update_batch_summary()
 
                 set_image_list_row(
                     row_index,
@@ -5049,9 +5063,11 @@ def check_processing_queue():
                 apply_saved_color_review(result)
 
                 try:
-                    sync_reviewed_result_to_csv(result)
+                    if not sync_reviewed_result_to_csv(result):
+                        queue_csv_review(result)
                 except OSError as error:
                     print(f"CSV review update error: {error}")
+                    queue_csv_review(result)
 
                 # A repeated Part ID can be legitimate inventory. Warn the
                 # employee, but never block or discard the additional item.
@@ -5077,6 +5093,7 @@ def check_processing_queue():
 
                 # Store the new result and count only work performed during
                 # this active batch session.
+                failed_image_paths.discard(image_path)
                 processed_results[image_path] = result
                 newly_processed_paths.add(image_path)
 
@@ -5147,10 +5164,9 @@ def check_processing_queue():
                         ),
                     )
 
-                image_listbox.selection_clear(0, tk.END)
-                image_listbox.selection_set(0)
-                image_listbox.activate(0)
-                show_selected_image()
+                image_filter_dropdown.set("Needs attention")
+                apply_image_filter()
+                update_batch_summary()
 
     except queue.Empty:
         pass
@@ -5769,6 +5785,7 @@ remove_selected_button.pack(side="right")
 image_filter_dropdown = ctk.CTkComboBox(
     list_panel,
     values=[
+        "Needs attention",
         "All Images",
         "Suggested Checks",
         "Part Check",
@@ -5785,7 +5802,7 @@ image_filter_dropdown = ctk.CTkComboBox(
     ),
 )
 
-image_filter_dropdown.set("All Images")
+image_filter_dropdown.set("Needs attention")
 
 image_filter_dropdown.pack(
     padx=12,
@@ -6760,9 +6777,7 @@ def build_gallery_interface():
         "Image": tk.StringVar(value="Select an image"),
         "Part": tk.StringVar(value="—"),
         "Part ID": tk.StringVar(value="—"),
-        "Part confidence": tk.StringVar(value="—"),
         "Color": tk.StringVar(value="—"),
-        "Color confidence": tk.StringVar(value="—"),
         "Part status": tk.StringVar(value="—"),
         "Color status": tk.StringVar(value="—"),
     }
@@ -6789,16 +6804,71 @@ def build_gallery_interface():
         foreground="#475569",
     ).grid(row=detail_row, column=0, columnspan=2, sticky="ew", pady=(12, 0))
 
+    filter_value = tk.StringVar(value=image_filter_dropdown.get())
+    filter_control = ttk.Combobox(
+        right, textvariable=filter_value, state="readonly",
+        values=("Needs attention", "All Images", "Suggested Checks", "Part Check", "Color Check", "Ready"),
+    )
+    filter_control.grid(row=detail_row + 1, column=0, columnspan=2, sticky="ew", pady=6)
+
+    def filter_changed(_event=None):
+        selected_for_approval.clear()
+        image_filter_dropdown.set(filter_value.get())
+        apply_image_filter()
+        rebuild_gallery()
+
+    filter_control.bind("<<ComboboxSelected>>", filter_changed)
+    selected_for_approval = set()
+    selection_variables = []
+    group_button = action_button(detail_row + 2, 0, "Approve selected (0)", lambda: approve_selected())
+    action_button(detail_row + 2, 1, "Select this page", lambda: select_page())
+
+    def update_group_selection():
+        group_button.configure(text=f"Approve selected ({len(selected_for_approval)})")
+
+    def select_page():
+        selected_for_approval.clear()
+        start = page_state["start"]
+        selected_for_approval.update(
+            str(Path(path)) for path in visible_image_paths[start:start + page_size]
+            if has_identifiers(processed_results.get(str(Path(path))))
+        )
+        rebuild_gallery()
+
+    def approve_selected():
+        if process_button.cget("state") == "disabled" or not selected_for_approval:
+            return
+        # Approve only explicitly selected, still-visible identities from these thumbnails.
+        visible = {str(Path(path)) for path in visible_image_paths}
+        if not selected_for_approval <= visible:
+            selected_for_approval.clear()
+            rebuild_gallery()
+            return
+        failed = []
+        for path in list(selected_for_approval):
+            try:
+                approved = approve_reviewed_result(processed_results.get(path, {}))
+            except (OSError, ValueError) as error:
+                failed.append(Path(path).name)
+                print(f"Group approval failed for {Path(path).name}: {error}")
+                continue
+            processed_results[path] = approved
+            queue_csv_review(approved)
+            selected_for_approval.discard(path)
+        update_batch_summary()
+        apply_image_filter()
+        rebuild_gallery()
+        if failed:
+            messagebox.showerror("Some pieces were not approved", "Retry these pieces: " + ", ".join(failed), parent=window)
+
     source_cache = {}
-    reference_sources = {}
-    reference_loading = set()
-    reference_failures = set()
-    reference_queue = queue.Queue()
+    reference_sources = reference_image_cache
+    reference_failures = reference_image_failures
     photo_references = []
     state = {
         "signature": None,
-        "reference_revision": 0,
         "rendered_selection": None,
+        "rendered_path": None,
     }
 
     def selected_index():
@@ -6819,11 +6889,9 @@ def build_gallery_interface():
                 if key != "Image":
                     detail_variables[key].set("No identification" if key == "Part" else "—")
             return
-        detail_variables["Part"].set(result.get("Part Name", "Unknown"))
+        detail_variables["Part"].set(f"{result.get('Part Name', 'Unknown')} ({result.get('Part Confidence', 'Unknown')})")
         detail_variables["Part ID"].set(result.get("Part ID", "Unknown"))
-        detail_variables["Part confidence"].set(result.get("Part Confidence", "Unknown"))
-        detail_variables["Color"].set(result.get("LEGO Color", "Unknown"))
-        detail_variables["Color confidence"].set(result.get("Color Confidence", "Unknown"))
+        detail_variables["Color"].set(f"{result.get('LEGO Color', 'Unknown')} ({result.get('Color Confidence', 'Unknown')})")
         detail_variables["Part status"].set(
             "Verified" if result.get("Part Review Completed") == "Yes" else
             "Review suggested" if result.get("Part Review Required") == "Yes" else "Saved / unverified"
@@ -6848,44 +6916,10 @@ def build_gallery_interface():
         image.thumbnail(size, Image.Resampling.LANCZOS)
         return ImageTk.PhotoImage(image)
 
-    def request_reference(url):
-        if (
-            not url
-            or url in reference_sources
-            or url in reference_loading
-            or url in reference_failures
-        ):
-            return
-        reference_loading.add(url)
-
-        def worker():
-            image_source = None
-            try:
-                response = requests.get(
-                    url,
-                    headers={
-                        "User-Agent": (
-                            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                            "Chrome/150.0"
-                        ),
-                        "Referer": "https://www.bricklink.com/",
-                        "Accept": "image/*",
-                    },
-                    timeout=15,
-                )
-                response.raise_for_status()
-                with Image.open(BytesIO(response.content)) as opened:
-                    image_source = opened.convert("RGB").copy()
-            except (requests.RequestException, OSError, ValueError):
-                pass
-            reference_queue.put((url, image_source))
-
-        threading.Thread(target=worker, daemon=True).start()
-
     def reference_thumbnail(url, size=(290, 145)):
         source = reference_sources.get(url)
         if source is None:
-            request_reference(url)
+            request_reference_image(url)
             return None
         image = source.copy()
         image.thumbnail(size, Image.Resampling.LANCZOS)
@@ -6893,8 +6927,9 @@ def build_gallery_interface():
 
     def select_gallery_row(index):
         select_review_index(index)
-        update_details()
+        gallery_canvas.focus_set()
         state["signature"] = None
+        rebuild_gallery()
 
     def normalize_gallery_page():
         total = len(visible_image_paths)
@@ -6932,6 +6967,9 @@ def build_gallery_interface():
         normalize_gallery_page()
         ensure_selection_page()
         photo_references.clear()
+        selection_variables.clear()
+        selected_for_approval.intersection_update(str(Path(path)) for path in visible_image_paths)
+        update_group_selection()
         row_widgets = {}
         for child in gallery_rows.winfo_children():
             child.destroy()
@@ -6950,9 +6988,15 @@ def build_gallery_interface():
             if cached_path not in active_source_keys:
                 source_cache.pop(cached_path, None)
 
+        previous_group = None
         for index, raw_path in enumerate(page_paths, start=start):
             path = Path(raw_path)
             result = processed_results.get(str(path))
+            group = review_group(result)
+            if group != previous_group:
+                label = f"Part {group[0]} · Color {group[1]}" if group[0] else "Unidentified / incomplete pieces"
+                ttk.Label(gallery_rows, text=label, font=("Segoe UI", 11, "bold")).pack(fill="x", padx=7, pady=(10, 2))
+                previous_group = group
             row_state = get_image_row_state(path)
             background = {
                 "done": "#DCFCE7",
@@ -6982,6 +7026,21 @@ def build_gallery_interface():
                 anchor="w",
             )
             heading.grid(row=0, column=0, columnspan=2, sticky="ew", padx=7, pady=(5, 2))
+
+            chosen = tk.BooleanVar(value=str(path) in selected_for_approval)
+            selection_variables.append(chosen)
+
+            def toggle_choice(path_key=str(path), variable=chosen):
+                if variable.get():
+                    selected_for_approval.add(path_key)
+                else:
+                    selected_for_approval.discard(path_key)
+                update_group_selection()
+
+            ttk.Checkbutton(
+                row, text="Include in group approval", variable=chosen, command=toggle_choice,
+                state="normal" if has_identifiers(result) else "disabled",
+            ).grid(row=2, column=0, columnspan=2, sticky="w", padx=7, pady=(0, 5))
 
             source_photo = local_thumbnail(reviewed_source_image(path))
             source_label = tk.Label(
@@ -7038,6 +7097,10 @@ def build_gallery_interface():
         else:
             gallery_canvas.yview_moveto(previous_scroll)
         state["rendered_selection"] = current
+        state["rendered_path"] = str(Path(visible_image_paths[current])) if current is not None and current < len(visible_image_paths) else None
+        if current is not None and current + 1 < len(visible_image_paths):
+            next_result = processed_results.get(str(Path(visible_image_paths[current + 1])), {})
+            request_reference_image(next_result.get("Reference Image URL", ""))
         page_text.set(
             f"Images {start + 1 if stop else 0}–{stop} of "
             f"{len(visible_image_paths)}"
@@ -7050,8 +7113,9 @@ def build_gallery_interface():
         )
         update_details()
         gallery_status.set(
-            f"Showing up to {page_size} of {len(visible_image_paths)} image(s). "
-            "Green is verified, yellow needs review, and blue is saved but unverified."
+            f"Needs attention: {sum(needs_attention(processed_results.get(str(Path(path)))) for path in selected_image_paths)} "
+            f"of {len(selected_image_paths)}. "
+            "Select matching thumbnails to approve together. Enter approves one; arrows navigate."
         )
 
     def signature():
@@ -7068,7 +7132,8 @@ def build_gallery_interface():
         return (
             result_signature,
             selected_index(),
-            state["reference_revision"],
+            len(reference_sources),
+            len(reference_failures),
             page_state["start"],
         )
 
@@ -7076,6 +7141,9 @@ def build_gallery_interface():
         # The gallery replaces the classic toolbar visually, but batch
         # processing still updates the original progress widgets. Mirror that
         # state here so folder batches show live progress in the active UI.
+        processing = process_button.cget("state") == "disabled"
+        filter_control.configure(state="disabled" if processing else "readonly")
+        filter_value.set(image_filter_dropdown.get())
         gallery_progress["maximum"] = max(
             float(batch_progress["maximum"]),
             1,
@@ -7086,26 +7154,6 @@ def build_gallery_interface():
             foreground=processing_status_label.cget("foreground"),
         )
 
-        changed_reference = False
-        try:
-            while True:
-                url, source = reference_queue.get_nowait()
-                reference_loading.discard(url)
-                if source is not None:
-                    reference_sources[url] = source
-                    reference_failures.discard(url)
-                else:
-                    # Remember failures for this session. Without this marker,
-                    # every gallery rebuild immediately retries the same URL,
-                    # causing an endless redraw/download loop.
-                    reference_failures.add(url)
-                changed_reference = True
-        except queue.Empty:
-            pass
-        # Several catalog requests finish close together. Wait for the current
-        # group rather than rebuilding all ten rows once per downloaded image.
-        if changed_reference and not reference_loading:
-            state["reference_revision"] += 1
         current_signature = signature()
         if current_signature != state["signature"]:
             state["signature"] = current_signature
@@ -7116,9 +7164,31 @@ def build_gallery_interface():
             window.after(350, poll_gallery)
 
     def gallery_action(action):
+        current = selected_index()
+        current_path = str(Path(visible_image_paths[current])) if current is not None and current < len(visible_image_paths) else None
+        if action is approve_current_and_next and (not current_path or current_path != state["rendered_path"]):
+            rebuild_gallery()
+            return
         action()
         window.after(120, update_details)
         state["signature"] = None
+        rebuild_gallery()
+
+    def review_shortcut(event):
+        if window.focus_get() is None or window.focus_get().winfo_toplevel() != window:
+            return
+        if window.focus_get().winfo_class() in {"Entry", "TEntry", "Text", "TCombobox", "Spinbox", "TSpinbox"}:
+            return
+        if process_button.cget("state") == "disabled":
+            return
+        if event.keysym in {"Return", "KP_Enter"}:
+            gallery_action(approve_current_and_next)
+        else:
+            gallery_action(lambda: move_review_selection(-1 if event.keysym in {"Left", "Up"} else 1))
+        return "break"
+
+    for key in ("Return", "KP_Enter", "Left", "Right", "Up", "Down"):
+        window.bind(f"<{key}>", review_shortcut)
 
     def resize_gallery(_event=None):
         gallery_canvas.itemconfigure(gallery_window_id, width=gallery_canvas.winfo_width())

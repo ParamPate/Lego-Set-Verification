@@ -40,6 +40,7 @@ into these functions after an employee confirms a color or part.
 
 import csv
 import json
+from review_policy import apply_review_policy, has_identifiers
 from datetime import datetime
 from pathlib import Path
 
@@ -82,6 +83,8 @@ def sync_reviewed_result_to_csv(result):
     traceability. The separate Final columns show the current operational
     decision after any part or color review.
     """
+
+    apply_review_policy(result)
 
     if not CSV_FILE.exists() or CSV_FILE.stat().st_size == 0:
         return False
@@ -246,10 +249,10 @@ def save_color_review(
                 saved_reviews = json.load(review_file)
 
             if not isinstance(saved_reviews, dict):
-                saved_reviews = {}
+                raise ValueError("Review history must contain a JSON object.")
 
-        except (json.JSONDecodeError, OSError):
-            saved_reviews = {}
+        except (ValueError, OSError) as error:
+            raise OSError("Existing review history could not be read; it was left unchanged.") from error
 
     image_name = result.get("Image", "Unknown")
 
@@ -311,15 +314,7 @@ def save_color_review(
     existing_review["Color Review"] = review_record
     saved_reviews[image_name] = existing_review
 
-    with REVIEW_FILE.open(
-        "w",
-        encoding="utf-8",
-    ) as review_file:
-        json.dump(
-            saved_reviews,
-            review_file,
-            indent=4,
-        )
+    _save_review_history(saved_reviews)
 
     return review_record
 
@@ -388,8 +383,7 @@ def clear_color_review(image_name):
         saved_reviews[image_name] = entry
     else:
         saved_reviews.pop(image_name, None)
-    with REVIEW_FILE.open("w", encoding="utf-8") as review_file:
-        json.dump(saved_reviews, review_file, indent=4)
+    _save_review_history(saved_reviews)
 
 
 # ---------------------------------------------------------------------------
@@ -422,10 +416,10 @@ def save_part_review(
                 saved_reviews = json.load(review_file)
 
             if not isinstance(saved_reviews, dict):
-                saved_reviews = {}
+                raise ValueError("Review history must contain a JSON object.")
 
-        except (json.JSONDecodeError, OSError):
-            saved_reviews = {}
+        except (ValueError, OSError) as error:
+            raise OSError("Existing review history could not be read; it was left unchanged.") from error
 
     image_name = original_result.get("Image", "Unknown")
 
@@ -509,15 +503,7 @@ def save_part_review(
     existing_review["Part Review"] = part_review_record
     saved_reviews[image_name] = existing_review
 
-    with REVIEW_FILE.open(
-        "w",
-        encoding="utf-8",
-    ) as review_file:
-        json.dump(
-            saved_reviews,
-            review_file,
-            indent=4,
-        )
+    _save_review_history(saved_reviews)
 
     return part_review_record
 
@@ -554,3 +540,45 @@ def load_part_review(image_name):
         return None
 
     return part_review
+
+
+def approve_reviewed_result(result):
+    """Persist explicit approval without changing the raw prediction columns."""
+    if not has_identifiers(result):
+        raise ValueError("Choose a valid part and color before approving this piece.")
+    approved = dict(result)
+    color = result.get("Confirmed LEGO Color", result.get("LEGO Color", ""))
+    color_id = result.get("Confirmed BrickLink Color ID", result.get("BrickLink Color ID", ""))
+    record = save_color_review(result, color, color_id)
+    # Keep an accepted rescan's history and Corrected status intact.
+    if result.get("Part Review Completed") != "Yes":
+        save_part_review(result, result, result["Image"], "Keep Original Result")
+        approved["Part Approval Status"] = "Confirmed"
+    approved.update({
+        "Original LEGO Color": record["Original Color"],
+        "LEGO Color": color,
+        "Confirmed LEGO Color": color,
+        "Confirmed BrickLink Color ID": color_id,
+        "Color Approval Status": record["Color Approval Status"],
+        "Part Review Required": "No",
+        "Color Review Required": "No",
+        "Part Review Completed": "Yes",
+        "Color Review Completed": "Yes",
+    })
+    approved["Reference Image URL"] = (
+        f"https://img.bricklink.com/ItemImage/PN/{color_id}/{approved['Part ID']}.png"
+    )
+    if approved.get("BrickLink URL") and approved["BrickLink URL"] != "N/A":
+        approved["BrickLink URL"] = approved["BrickLink URL"].split("&idColor=")[0] + f"&idColor={color_id}"
+    return apply_review_policy(approved)
+
+
+def _save_review_history(saved_reviews):
+    """Keep the previous review history intact if writing fails."""
+    temporary_file = REVIEW_FILE.with_suffix(".json.tmp")
+    try:
+        with temporary_file.open("w", encoding="utf-8") as review_file:
+            json.dump(saved_reviews, review_file, indent=4)
+        temporary_file.replace(REVIEW_FILE)
+    finally:
+        temporary_file.unlink(missing_ok=True)

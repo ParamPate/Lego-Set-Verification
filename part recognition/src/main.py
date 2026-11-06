@@ -48,6 +48,7 @@ import requests
 from PIL import Image
 
 from bricklink_colors import BRICKLINK_REVIEW_COLORS
+from review_policy import apply_review_policy, PART_REVIEW_THRESHOLD, COLOR_REVIEW_THRESHOLD
 
 
 # ============================================================
@@ -101,12 +102,6 @@ API_RESPONSES_FILE = (
     / "results"
     / "brickognize_responses.json"
 )
-
-# Confidence threshold used to determine whether a part prediction should be reviewed manually.
-PART_REVIEW_THRESHOLD = 80.0
-
-# Confidence threshold used to determine whether a color prediction should be reviewed manually.
-COLOR_REVIEW_THRESHOLD = 80.0
 
 
 # ============================================================
@@ -670,7 +665,7 @@ def identify_part(image_path: Path) -> dict | None:
         # ------------------------------------------------------------
 
         # Return one complete dictionary. The dictionary keys become the CSV column headers and the values become one CSV row.
-        return {
+        result = {
             "Image": image_path.name,
             "Response ID": response_id,
             "Part ID": part_id,
@@ -721,6 +716,8 @@ def identify_part(image_path: Path) -> dict | None:
             "Color Review Completed": "No",
             "Final BrickLink URL": bricklink_url,
         }
+
+        return apply_review_policy(result)
 
     # Handle a missing or incorrectly named source image.
     except FileNotFoundError:
